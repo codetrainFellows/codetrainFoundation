@@ -1,5 +1,6 @@
 import React from "react";
 import Donate from "./Donate";
+import Problem from "./Problem";
 
 export default function Home() {
   return (
@@ -148,6 +149,8 @@ export default function Home() {
 
       {/* Donate & Sponsorship */}
       <Donate />
+      {/* Problem */}
+      <Problem />
     </>
   );
 }
