@@ -19,7 +19,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
             <Link to="/">
-              <h1>Codetrain Foundation</h1>
+              <h1 className='font-black'>Codetrain Foundation</h1>
             </Link>
           </div>
           <div className="hidden md:flex items-center">

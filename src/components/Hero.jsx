@@ -1,0 +1,121 @@
+import React from 'react';
+import { ArrowRight, Sparkles, Zap } from 'lucide-react';
+
+export default function HeroSection() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
+      <div className="container mx-auto px-6 py-16 lg:py-24">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Text Content */}
+          <div className="space-y-8 animate-fade-in">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-purple-500/20 rounded-full border border-purple-400/30 backdrop-blur-sm">
+              <Sparkles className="w-4 h-4 text-purple-300" />
+              <span className="text-sm text-purple-200">New Features Available</span>
+            </div>
+            
+            <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
+              Empowering Africa's
+              <span className="block bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
+                Next Inventors
+              </span>
+            </h1>
+            
+            <p className="text-lg lg:text-xl text-gray-300 leading-relaxed max-w-lg">
+              Every young African deserves the opportunity to learn, build, and thrive.
+              Your donation funds scholarship that unlock careers in technology
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4">
+              <button className="group px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg font-semibold text-white shadow-lg shadow-purple-500/50 hover:shadow-purple-500/70 hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2">
+                Sponsor a student
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </button>
+              
+              <button className="px-8 py-4 bg-white/10 backdrop-blur-sm rounded-lg font-semibold text-white border border-white/20 hover:bg-white/20 transition-all duration-300">
+                Donate Now
+              </button>
+            </div>
+            
+            <div className="flex items-center gap-8 pt-4">
+              <div className="flex items-center gap-2">
+                <Zap className="w-5 h-5 text-yellow-400" />
+                <span className="text-sm text-gray-300">100 % of your donation goes directly to fund students's scholarship</span>
+              </div>
+              {/* <div className="flex items-center gap-2">
+                <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                <span className="text-sm text-gray-300">99.9% Uptime</span>
+              </div> */}
+            </div>
+          </div>
+          
+          {/* Image Side */}
+          <div className="relative lg:h-[600px] h-[400px] group">
+            <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-3xl blur-3xl opacity-30 group-hover:opacity-40 transition-opacity duration-500"></div>
+            
+            <div className="relative h-full bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-3xl border border-white/10 backdrop-blur-sm overflow-hidden">
+              {/* Placeholder for your actual image */}
+              <div className="w-full h-full flex items-center justify-center">
+                <img
+                  src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&q=80"
+                  alt="Hero"
+                  className="w-full h-full object-cover rounded-3xl group-hover:scale-105 transition-transform duration-700"
+                />
+              </div>
+              
+              {/* Floating Elements */}
+              <div className="absolute top-8 right-8 bg-white/10 backdrop-blur-md px-6 py-3 rounded-xl border border-white/20 animate-float">
+                <div className="text-2xl font-bold text-white">10K+</div>
+                <div className="text-xs text-gray-300">Active Users</div>
+              </div>
+              
+              <div className="absolute bottom-8 left-8 bg-white/10 backdrop-blur-md px-6 py-3 rounded-xl border border-white/20 animate-float-delayed">
+                <div className="flex items-center gap-2">
+                  <div className="flex -space-x-2">
+                    <div className="w-8 h-8 rounded-full bg-purple-400 border-2 border-white"></div>
+                    <div className="w-8 h-8 rounded-full bg-pink-400 border-2 border-white"></div>
+                    <div className="w-8 h-8 rounded-full bg-blue-400 border-2 border-white"></div>
+                  </div>
+                  <span className="text-sm text-white font-medium">Join thousands</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <style jsx>{`
+        @keyframes fade-in {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        
+        @keyframes float {
+          0%, 100% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-10px);
+          }
+        }
+        
+        .animate-fade-in {
+          animation: fade-in 1s ease-out;
+        }
+        
+        .animate-float {
+          animation: float 3s ease-in-out infinite;
+        }
+        
+        .animate-float-delayed {
+          animation: float 3s ease-in-out infinite 1.5s;
+        }
+      `}</style>
+    </div>
+  );
+}

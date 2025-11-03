@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import Navbar from './components/Navbar'
+import HeroSection from './components/Hero'
 
 function App() {
 
@@ -8,7 +9,9 @@ function App() {
     <>
     <BrowserRouter>
      <Navbar />
+     <HeroSection />
     <Routes>
+      
 
 
     </Routes>
