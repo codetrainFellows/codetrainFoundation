@@ -1,6 +1,7 @@
 import React from "react";
 import Donate from "./Donate";
 import Problem from "./Problem";
+import SuccessStory from "./SuccessStory";
 
 export default function Home() {
   return (
@@ -151,6 +152,8 @@ export default function Home() {
       <Donate />
       {/* Problem */}
       <Problem />
+      {/* Success */}
+      <SuccessStory />
     </>
   );
 }
