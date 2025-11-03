@@ -52,7 +52,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-
+      {/* Our Impact */}
       <div>
         <div>
           <h1 className="text-center text-6xl mt-22">Our Impact</h1>
@@ -62,25 +62,22 @@ export default function Home() {
         </div>
         <div className="flex justify-around">
           <div>
-            <h1 className="text-xl text-center">Trained Graduates</h1>
+            <h1 className="text-xl text-center">Alumni</h1>
             <p className="text-8xl">700+</p>
           </div>
           <div>
             <h1 className="text-xl text-center">Job Placement</h1>
-            <p className="text-8xl">80%</p>
+            <p className="text-8xl">89%</p>
           </div>
           <div>
-            <h1 className="text-xl text-center">
-              Countries Employing Our Graduates
-            </h1>
-            <p className="text-8xl">12+</p>
-          </div>
-          <div>
-            <h1 className="text-xl text-center">Women in Tech</h1>
-            <p className="text-8xl">45%</p>
+            <h1 className="text-xl text-center">Rating</h1>
+            <p className="text-8xl">91%</p>
           </div>
         </div>
       </div>
+
+      {/* Donate & Sponsorship */}
+
     </>
   );
 }
