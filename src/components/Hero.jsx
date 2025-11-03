@@ -31,7 +31,7 @@ export default function HeroSection() {
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
               
-              <button className="px-8 py-4 bg-white/10 backdrop-blur-sm rounded-lg font-semibold text-white border border-white/20 hover:bg-white/20 transition-all duration-300">
+              <button className="px-8 py-4 bg-white/10 backdrop-blur-sm rounded-lg font-semibold text-black border border-white/20 hover:bg-white/20 transition-all duration-300">
                 Donate Now
               </button>
             </div>
@@ -63,7 +63,7 @@ export default function HeroSection() {
               </div>
               
               {/* Floating Elements */}
-              <div className="absolute top-8 right-8 bg-white/10 backdrop-blur-md px-6 py-3 rounded-xl border border-white/20 animate-float">
+              {/* <div className="absolute top-8 right-8 bg-white/10 backdrop-blur-md px-6 py-3 rounded-xl border border-white/20 animate-float">
                 <div className="text-2xl font-bold text-white">10K+</div>
                 <div className="text-xs text-gray-300">Active Students</div>
               </div>
@@ -77,7 +77,7 @@ export default function HeroSection() {
                   </div>
                   <span className="text-sm text-white font-medium">Join thousands</span>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
