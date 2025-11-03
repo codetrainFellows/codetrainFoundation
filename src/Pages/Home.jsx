@@ -6,63 +6,63 @@ const Home = () => {
     {
       year: '2017',
       title: 'The Beginning',
-      description: 'Our journey started with a simple idea and a passionate team.',
+      description: 'Our journey started with a simple idea.',
       icon: Rocket,
       color: 'from-blue-500 to-cyan-500'
     },
     {
       year: '2018',
       title: 'First Milestone',
-      description: 'Reached 1,000 happy customers and expanded our services.',
+      description: 'Our journey started with a simple idea.',
       icon: Star,
       color: 'from-purple-500 to-pink-500'
     },
     {
       year: '2019',
       title: 'Growing Together',
-      description: 'Opened new offices and doubled our team size.',
+      description: 'Our journey started with a simple idea.',
       icon: Users,
       color: 'from-green-500 to-emerald-500'
     },
     {
       year: '2020',
       title: 'Innovation Year',
-      description: 'Launched groundbreaking features despite global challenges.',
+      description: 'Our journey started with a simple idea.',
       icon: Award,
       color: 'from-orange-500 to-red-500'
     },
     {
       year: '2021',
       title: 'Recognition',
-      description: 'Won industry awards and recognition for excellence.',
+      description: 'Our journey started with a simple idea.',
       icon: Award,
       color: 'from-yellow-500 to-orange-500'
     },
     {
       year: '2022',
       title: 'Global Expansion',
-      description: 'Extended our reach to 50+ countries worldwide.',
+      description:'Our journey started with a simple idea.',
       icon: Heart,
       color: 'from-pink-500 to-rose-500'
     },
     {
       year: '2023',
       title: 'Technology Leap',
-      description: 'Integrated AI and cutting-edge technology into our platform.',
+      description: 'Our journey started with a simple idea.',
       icon: Rocket,
       color: 'from-indigo-500 to-purple-500'
     },
     {
       year: '2024',
       title: 'Community Focus',
-      description: 'Built a thriving community of 100,000+ active users.',
+      description: 'Our journey started with a simple idea.',
       icon: Users,
       color: 'from-teal-500 to-cyan-500'
     },
     {
       year: '2025',
       title: 'The Future',
-      description: 'Continuing to innovate and shape the future together.',
+      description: 'Our journey started with a simple idea.',
       icon: Star,
       color: 'from-violet-500 to-fuchsia-500'
     }
@@ -157,12 +157,12 @@ const Home = () => {
                       </div>
 
                       {/* Content Card */}
-                      <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-all duration-300 group-hover:-translate-y-1 border border-gray-100">
-                        <div className="flex items-center gap-3 mb-3">
-                          <span className={`text-3xl font-bold bg-gradient-to-r ${event.color} bg-clip-text text-transparent`}>
+                      <div className="bg-white rounded-xl shadow-lg p-2 hover:shadow-2xl transition-all duration-300 group-hover:-translate-y-1 border border-gray-100">
+                        <div className="flex items-center gap-3 mb-2">
+                          <span className={`text-2xl font-bold bg-gradient-to-r ${event.color} bg-clip-text text-transparent`}>
                             {event.year}
                           </span>
-                          <Calendar className="w-5 h-5 text-gray-400" />
+                          <Calendar className="w-4 h-4 text-gray-400" />
                         </div>
                         <h3 className="text-xl font-bold text-gray-800 mb-2">
                           {event.title}

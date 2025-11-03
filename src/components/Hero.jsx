@@ -10,7 +10,7 @@ export default function HeroSection() {
           <div className="space-y-8 animate-fade-in">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-700 rounded-full border border-purple-400/30 backdrop-blur-sm text-white">
               <Sparkles className="w-4 h-4" />
-              <span className="text-sm text-white">New Features Available</span>
+              <span className="text-sm text-white">Codetrain Foundation</span>
             </div>
             
             <h1 className="text-5xl lg:text-7xl font-semibold leading-tight">
@@ -65,7 +65,7 @@ export default function HeroSection() {
               {/* Floating Elements */}
               <div className="absolute top-8 right-8 bg-white/10 backdrop-blur-md px-6 py-3 rounded-xl border border-white/20 animate-float">
                 <div className="text-2xl font-bold text-white">10K+</div>
-                <div className="text-xs text-gray-300">Active Users</div>
+                <div className="text-xs text-gray-300">Active Students</div>
               </div>
               
               <div className="absolute bottom-8 left-8 bg-white/10 backdrop-blur-md px-6 py-3 rounded-xl border border-white/20 animate-float-delayed">
