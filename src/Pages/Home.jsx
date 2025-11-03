@@ -69,20 +69,20 @@ const Home = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">
+    <div className="min-h-screen bg-linear-to-br from-slate-50 via-blue-50 to-purple-50">
       <div className="container mx-auto px-6 py-16">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-6xl font-bold mb-4 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent">
+          <h1 className="text-6xl font-bold mb-4 bg-linear-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent">
             OUR STORY
           </h1>
           <p className="text-gray-600 text-lg">A journey through time and memories</p>
         </div>
 
         {/* Main Content */}
-        <div className="grid lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
+        <div className="grid lg:grid-cols-5 gap-12 max-w-7xl mx-auto">
           {/* Left Side - Two Images Vertical */}
-          <div className="lg:col-span-1 space-y-6">
+          <div className="lg:col-span-3 space-y-6">
             {/* First Image */}
             <div className="relative group overflow-hidden rounded-2xl shadow-2xl">
               <img
@@ -134,7 +134,7 @@ const Home = () => {
           </div>
 
           {/* Right Side - Timeline */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-1">
             <div className="relative">
               {/* Timeline Line */}
               <div className="absolute left-8 top-0 bottom-0 w-1 bg-gradient-to-b from-purple-400 via-pink-400 to-blue-400"></div>

@@ -3,19 +3,19 @@ import { ArrowRight, Sparkles, Zap } from 'lucide-react';
 
 export default function HeroSection() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
+    <div className="min-h-screen">
       <div className="container mx-auto px-6 py-16 lg:py-24">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div className="space-y-8 animate-fade-in">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-purple-500/20 rounded-full border border-purple-400/30 backdrop-blur-sm">
-              <Sparkles className="w-4 h-4 text-purple-300" />
-              <span className="text-sm text-purple-200">New Features Available</span>
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-700 rounded-full border border-purple-400/30 backdrop-blur-sm text-white">
+              <Sparkles className="w-4 h-4" />
+              <span className="text-sm text-white">New Features Available</span>
             </div>
             
-            <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
+            <h1 className="text-5xl lg:text-7xl font-semibold leading-tight">
               Empowering Africa's
-              <span className="block bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
+              <span className="block bg-clip-text italic">
                 Next Inventors
               </span>
             </h1>
@@ -26,7 +26,7 @@ export default function HeroSection() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="group px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg font-semibold text-white shadow-lg shadow-purple-500/50 hover:shadow-purple-500/70 hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2">
+              <button className="group px-8 py-4 bg-linear-to-r from-purple-500 to-pink-500 rounded-lg font-semibold text-white shadow-lg shadow-purple-500/50 hover:shadow-purple-500/70 hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2">
                 Sponsor a student
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
@@ -39,7 +39,7 @@ export default function HeroSection() {
             <div className="flex items-center gap-8 pt-4">
               <div className="flex items-center gap-2">
                 <Zap className="w-5 h-5 text-yellow-400" />
-                <span className="text-sm text-gray-300">100 % of your donation goes directly to fund students's scholarship</span>
+                <span className="text-sm text-gray-300 font-semibold">100% of your donation goes directly to fund students's scholarship</span>
               </div>
               {/* <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
@@ -50,9 +50,9 @@ export default function HeroSection() {
           
           {/* Image Side */}
           <div className="relative lg:h-[600px] h-[400px] group">
-            <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-3xl blur-3xl opacity-30 group-hover:opacity-40 transition-opacity duration-500"></div>
+            <div className="absolute inset-0 bg-linear-to-r from-purple-500 to-pink-500 rounded-3xl blur-3xl opacity-30 group-hover:opacity-40 transition-opacity duration-500"></div>
             
-            <div className="relative h-full bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-3xl border border-white/10 backdrop-blur-sm overflow-hidden">
+            <div className="relative h-full bg-linear-to-br from-purple-500/20 to-pink-500/20 rounded-3xl border border-white/10 backdrop-blur-sm overflow-hidden">
               {/* Placeholder for your actual image */}
               <div className="w-full h-full flex items-center justify-center">
                 <img
