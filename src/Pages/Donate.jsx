@@ -3,7 +3,7 @@ import { Heart, Users, ArrowRight } from "lucide-react";
 
 function Donate() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-50 via-yellow-50 to-amber-50 py-16 px-4">
+    <div className="min-h-screen bg-white py-16 px-4">
       {/* Header Section */}
       <div className="max-w-4xl mx-auto text-center mb-16">
         <h1 className="text-5xl font-bold text-gray-900 mb-4">
