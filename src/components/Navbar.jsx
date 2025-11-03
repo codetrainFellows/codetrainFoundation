@@ -83,7 +83,7 @@ const Navbar = () => {
               {link.name}
             </a>
           ))}
-          <button className="w-full mt-4 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg font-semibold text-white flex items-center justify-center gap-2 hover:shadow-lg transition-all duration-300">
+          <button className="w-full mt-4 px-6 py-3 bg-[#0c0827] rounded-lg font-semibold text-white flex items-center justify-center gap-2 hover:shadow-lg transition-all duration-300">
             <Heart className="w-5 h-5" />
             Sponsor a Student
           </button>
