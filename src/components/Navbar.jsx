@@ -43,7 +43,7 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <div className="hidden md:flex items-center">
-            <button className="group px-6 py-3 bg-[#0c0827] rounded-lg font-bold text-[#ffbf00] transition-all duration-300 flex items-center gap-2 hover:shadow-lg hover:shadow-blue-500/50 hover:scale-105 active:scale-95">
+            <button className="group px-6 py-3 bg-[#0c0827] rounded-lg font-bold text-[#ffbf00] transition-all duration-300 flex items-center gap-2 hover:shadow-lg hover:shadow-blue-500/50 hover:scale-105 active:scale-95 cursor-pointer">
               <Heart className="w-5 h-5 transition-transform group-hover:scale-110" />
               Sponsor a Student
             </button>

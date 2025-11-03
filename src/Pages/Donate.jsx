@@ -49,7 +49,7 @@ function Donate() {
           </div>
 
           {/* Button */}
-          <button className="relative w-full bg-[#0c0827] text-[#ffbf00] font-bold px-8 py-4 rounded-xl hover:from-yellow-600 hover:to-orange-600 transition-all duration-300 flex items-center justify-center gap-2 group-hover:gap-4 shadow-lg hover:shadow-xl">
+          <button className="relative w-full bg-[#0c0827] text-[#ffbf00] font-bold px-8 py-4 rounded-xl hover:from-yellow-600 hover:to-orange-600 transition-all duration-300 flex items-center justify-center gap-2 group-hover:gap-4 shadow-lg hover:shadow-xl cursor-pointer">
             Donate Now
             <ArrowRight size={20} className="transition-all duration-300" />
           </button>
@@ -84,7 +84,7 @@ function Donate() {
           </div>
 
           {/* Button */}
-          <button className="relative w-full bg-[#ffbf00] text-[#0c0827] font-bold px-8 py-4 rounded-xl hover:from-amber-600 hover:to-yellow-600 transition-all duration-300 flex items-center justify-center gap-2 group-hover:gap-4 shadow-lg hover:shadow-xl">
+          <button className="relative w-full bg-[#ffbf00] text-[#0c0827] font-bold px-8 py-4 rounded-xl hover:from-amber-600 hover:to-yellow-600 transition-all duration-300 flex items-center justify-center gap-2 group-hover:gap-4 shadow-lg hover:shadow-xl cursor-pointer">
             Become a Sponsor
             <ArrowRight size={20} className="transition-all duration-300" />
           </button>

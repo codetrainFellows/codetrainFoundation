@@ -26,12 +26,12 @@ export default function HeroSection() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="group px-8 py-4 bg-[#ffbf00] text-[#0c0127] rounded-lg font-bold  shadow-lg shadow-purple-500/50 hover:shadow-purple-500/70 hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2">
+              <button className="group px-8 py-4 bg-[#ffbf00] text-[#0c0127] rounded-lg font-bold  shadow-lg shadow-purple-500/50 hover:shadow-purple-500/70 hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer">
                 Sponsor a student
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
               
-              <button className="px-8 py-4 bg-[#0c0127] font-semibold text-[#ffbf00] rounded-lg font-bold  shadow-lg shadow-purple-500/50 hover:shadow-purple-500/70 hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2">
+              <button className="px-8 py-4 bg-[#0c0127] font-semibold text-[#ffbf00] rounded-lg font-bold  shadow-lg shadow-purple-500/50 hover:shadow-purple-500/70 hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer">
                 Donate Now
               </button>
             </div>
