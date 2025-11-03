@@ -157,7 +157,7 @@ const Home = () => {
                       </div>
 
                       {/* Content Card */}
-                      <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-all duration-300 group-hover:-translate-y-1 border border-gray-100">
+                      <div className="bg-white rounded-xl shadow-lg p-2 hover:shadow-2xl transition-all duration-300 group-hover:-translate-y-1 border border-gray-100">
                         <div className="flex items-center gap-3 mb-3">
                           <span className={`text-3xl font-bold bg-gradient-to-r ${event.color} bg-clip-text text-transparent`}>
                             {event.year}

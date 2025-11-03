@@ -10,7 +10,7 @@ export default function HeroSection() {
           <div className="space-y-8 animate-fade-in">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-purple-500/20 rounded-full border border-purple-400/30 backdrop-blur-sm">
               <Sparkles className="w-4 h-4 text-purple-300" />
-              <span className="text-sm text-purple-200">New Features Available</span>
+              <span className="text-sm text-purple-200">Codetrain Foundation</span>
             </div>
             
             <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
