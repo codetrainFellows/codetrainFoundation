@@ -55,18 +55,30 @@ export default function Home() {
 
       <div>
         <div>
-          <h1 className="text-center text-6xl">Our Impact</h1>
+          <h1 className="text-center text-6xl mt-22">Our Impact</h1>
           <p className="text-center pt-5">
             Your donation keeps this door of opportunity open
           </p>
         </div>
         <div className="flex justify-around">
-        <div>
-          <h1></h1>
-        </div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
+          <div>
+            <h1 className="text-xl text-center">Trained Graduates</h1>
+            <p className="text-8xl">700+</p>
+          </div>
+          <div>
+            <h1 className="text-xl text-center">Job Placement</h1>
+            <p className="text-8xl">80%</p>
+          </div>
+          <div>
+            <h1 className="text-xl text-center">
+              Countries Employing Our Graduates
+            </h1>
+            <p className="text-8xl">12+</p>
+          </div>
+          <div>
+            <h1 className="text-xl text-center">Women in Tech</h1>
+            <p className="text-8xl">45%</p>
+          </div>
         </div>
       </div>
     </>
