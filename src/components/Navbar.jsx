@@ -67,7 +67,7 @@ const Navbar = () => {
               />
             </form> */}
             <Link to="/cart" className="relative">
-            <button className="group px-8 py-4 bg-blue-700 rounded-lg font-semibold text-white shadow-lg shadow-purple-500/50 hover:shadow-purple-500/70 hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2">
+            <button className="group px-8 py-4 bg-blue-700 rounded-lg font-semibold text-white transition-all duration-300 flex items-center justify-center gap-2 hover:bg-white hover:text-yellow-300 hover:border hover:border-blue-700">
                 Sponsor a student
                 
               </button>
