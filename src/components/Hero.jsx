@@ -16,7 +16,7 @@ export default function HeroSection() {
             <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
               Empowering Africa's
               <span className="block bg-clip-text">
-                Next Inventors
+                Next Innovators
               </span>
             </h1>
             
@@ -26,7 +26,7 @@ export default function HeroSection() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="group px-8 py-4 bg-linear-to-r from-purple-500 to-pink-500 rounded-lg font-semibold text-white shadow-lg shadow-purple-500/50 hover:shadow-purple-500/70 hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2">
+              <button className="group px-8 py-4 bg-[#0c0127] rounded-lg font-semibold text-white shadow-lg shadow-purple-500/50 hover:shadow-purple-500/70 hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2">
                 Sponsor a student
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>

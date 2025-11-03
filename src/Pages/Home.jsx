@@ -1,218 +1,113 @@
 import React from 'react';
-import { Calendar, Heart, Star, Award, Rocket, Users } from 'lucide-react';
 
-const Home = () => {
-  const timelineEvents = [
-    {
-      year: '2017',
-      title: 'The Beginning',
-      description: 'Our journey started with a simple idea.',
-      icon: Rocket,
-      color: 'from-blue-500 to-cyan-500'
-    },
-    {
-      year: '2018',
-      title: 'First Milestone',
-      description: 'Our journey started with a simple idea.',
-      icon: Star,
-      color: 'from-purple-500 to-pink-500'
-    },
-    {
-      year: '2019',
-      title: 'Growing Together',
-      description: 'Our journey started with a simple idea.',
-      icon: Users,
-      color: 'from-green-500 to-emerald-500'
-    },
-    {
-      year: '2020',
-      title: 'Innovation Year',
-      description: 'Our journey started with a simple idea.',
-      icon: Award,
-      color: 'from-orange-500 to-red-500'
-    },
-    {
-      year: '2021',
-      title: 'Recognition',
-      description: 'Our journey started with a simple idea.',
-      icon: Award,
-      color: 'from-yellow-500 to-orange-500'
-    },
-    {
-      year: '2022',
-      title: 'Global Expansion',
-      description:'Our journey started with a simple idea.',
-      icon: Heart,
-      color: 'from-pink-500 to-rose-500'
-    },
-    {
-      year: '2023',
-      title: 'Technology Leap',
-      description: 'Our journey started with a simple idea.',
-      icon: Rocket,
-      color: 'from-indigo-500 to-purple-500'
-    },
-    {
-      year: '2024',
-      title: 'Community Focus',
-      description: 'Our journey started with a simple idea.',
-      icon: Users,
-      color: 'from-teal-500 to-cyan-500'
-    },
-    {
-      year: '2025',
-      title: 'The Future',
-      description: 'Our journey started with a simple idea.',
-      icon: Star,
-      color: 'from-violet-500 to-fuchsia-500'
-    }
-  ];
-
+export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">
-      <div className="container mx-auto px-6 py-16">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <h1 className="text-6xl font-bold mb-4 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent">
-            OUR STORY
-          </h1>
-          <p className="text-gray-600 text-lg">A journey through time and memories</p>
-        </div>
-
-        {/* Main Content */}
-        <div className="grid lg:grid-cols-5 gap-12 max-w-7xl mx-auto">
-          {/* Left Side - Two Images and Stats */}
-          <div className="lg:col-span-3 space-y-6">
-            {/* First Image */}
-            <div className="relative group overflow-hidden rounded-2xl shadow-2xl">
-              <img
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80"
-                alt="Team collaboration"
-                className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-6 left-6 text-white">
-                  <h3 className="text-xl font-bold mb-2">Our Team</h3>
-                  <p className="text-sm text-gray-200">United by passion</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Second Image */}
-            <div className="relative group overflow-hidden rounded-2xl shadow-2xl">
-              <img
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80"
-                alt="Success celebration"
-                className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-6 left-6 text-white">
-                  <h3 className="text-xl font-bold mb-2">Celebrating Success</h3>
-                  <p className="text-sm text-gray-200">Every milestone matters</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Stats Card */}
-            {/* <div className="bg-white rounded-2xl shadow-xl p-6 space-y-4">
-              <h3 className="font-bold text-gray-800 text-lg">By the Numbers</h3>
-              <div className="space-y-3">
-                <div className="flex justify-between items-center">
-                  <span className="text-gray-600">Years of Excellence</span>
-                  <span className="font-bold text-purple-600 text-xl">8+</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-gray-600">Happy Customers</span>
-                  <span className="font-bold text-pink-600 text-xl">100K+</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-gray-600">Countries</span>
-                  <span className="font-bold text-blue-600 text-xl">50+</span>
-                </div>
-              </div>
-            </div> */}
+    <div className="min-h-screen bg-gradient-to-br from-amber-50 to-orange-50 py-16 px-4">
+      <div className="max-w-6xl mx-auto">
+        <h1 className="text-5xl font-bold text-gray-900 mb-12">Our Story</h1>
+        
+        <div className="grid md:grid-cols-2 gap-8 mb-16">
+          {/* Image Grid */}
+          <div className="grid grid-cols-2 gap-4">
+            <img 
+              src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&h=400&fit=crop" 
+              alt="Student 1"
+              className="w-full h-64 object-cover rounded-lg shadow-lg"
+            />
+            <img 
+              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop" 
+              alt="Student 2"
+              className="w-full h-64 object-cover rounded-lg shadow-lg"
+            />
+            <img 
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" 
+              alt="Student 3"
+              className="w-full h-64 object-cover rounded-lg shadow-lg"
+            />
+            <img 
+              src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=400&fit=crop" 
+              alt="Graduate"
+              className="w-full h-64 object-cover rounded-lg shadow-lg"
+            />
           </div>
 
-          {/* Right Side - Timeline (matches height of two images) */}
-          <div className="lg:col-span-2">
-            <div className="relative h-full">
-              {/* Timeline Container with scroll */}
-              <div className="h-[41rem] overflow-y-auto pr-4 scrollbar-thin scrollbar-thumb-purple-400 scrollbar-track-gray-100">
-                <div className="relative">
-                  {/* Timeline Line */}
-                  <div className="absolute left-8 top-0 bottom-0 w-1 bg-gradient-to-b from-purple-400 via-pink-400 to-blue-400"></div>
+          {/* Text Content */}
+          <div className="flex flex-col justify-center space-y-6">
+            <p className="text-lg text-gray-700 leading-relaxed">
+              Codetrain Codetrain helped me build the skills and confidence to work in tech.
+            </p>
+            
+            <p className="text-lg text-gray-700 leading-relaxed">
+              Your donation funds scholarships that unlock careers in technology.
+            </p>
+            
+            <p className="text-lg text-gray-700 leading-relaxed">
+              We've grown from 10 students and borrowedlabs to over 100 graduates working in 191 countries for tech companies around the world.
+            </p>
+            
+            <p className="text-base text-gray-600 italic">
+              — Abigail Codetrain Graduate
+            </p>
 
-                  {/* Timeline Events */}
-                  <div className="space-y-6">
-                    {timelineEvents.map((event, index) => {
-                      const IconComponent = event.icon;
-                      return (
-                        <div 
-                          key={event.year} 
-                          className="relative pl-20 group"
-                          style={{
-                            animation: `fadeInUp 0.6s ease-out ${index * 0.1}s both`
-                          }}
-                        >
-                          {/* Timeline Dot */}
-                          <div className={`absolute left-4 w-9 h-9 bg-gradient-to-br ${event.color} rounded-full flex items-center justify-center shadow-lg ring-4 ring-white group-hover:scale-125 transition-transform duration-300`}>
-                            <IconComponent className="w-5 h-5 text-white" />
-                          </div>
-
-                          {/* Content Card */}
-                          <div className="bg-white rounded-xl shadow-lg p-4 hover:shadow-2xl transition-all duration-300 group-hover:-translate-y-1 border border-gray-100">
-                            <div className="flex items-center gap-3 mb-2">
-                              <span className={`text-2xl font-bold bg-gradient-to-r ${event.color} bg-clip-text text-transparent`}>
-                                {event.year}
-                              </span>
-                              <Calendar className="w-4 h-4 text-gray-400" />
-                            </div>
-                            <h3 className="text-lg font-bold text-gray-800 mb-2">
-                              {event.title}
-                            </h3>
-                            <p className="text-gray-600 text-sm leading-relaxed">
-                              {event.description}
-                            </p>
-                          </div>
-                        </div>
-                      );
-                    })}
-                  </div>
-                </div>
+             {/* UN SDGs Section */}
+        <div className="p-8 md:p-12">
+          <h2 className="text-4xl font-bold text-gray-900 mb-8">
+            Alignment with the UN SDGs
+          </h2>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {/* SDG 4 */}
+            <div className="flex flex-col items-center text-center">
+              <div className="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center mb-4">
+                <span className="text-white text-2xl font-bold">📚</span>
               </div>
+              <h3 className="font-bold text-gray-900 mb-2">SDG 4</h3>
+              <p className="text-sm text-gray-600">
+                Ensure quality education for under-served youth
+              </p>
+            </div>
+
+            {/* SDG 5 */}
+            <div className="flex flex-col items-center text-center">
+              <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mb-4">
+                <span className="text-white text-2xl font-bold">⚖️</span>
+              </div>
+              <h3 className="font-bold text-gray-900 mb-2">SDG 5</h3>
+              <p className="text-sm text-gray-600">
+                Achieve gender achievements
+              </p>
+            </div>
+
+            {/* SDG 8 */}
+            <div className="flex flex-col items-center text-center">
+              <div className="w-16 h-16 bg-amber-500 rounded-full flex items-center justify-center mb-4">
+                <span className="text-white text-2xl font-bold">💼</span>
+              </div>
+              <h3 className="font-bold text-gray-900 mb-2">SDG 8</h3>
+              <p className="text-sm text-gray-600">
+                Develop age of patents through education
+              </p>
+            </div>
+
+            {/* SDG 17 */}
+            <div className="flex flex-col items-center text-center">
+              <div className="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mb-4">
+                <span className="text-white text-2xl font-bold">🤝</span>
+              </div>
+              <h3 className="font-bold text-gray-900 mb-2">SDG 17</h3>
+              <p className="text-sm text-gray-600">
+                Partnership and global development partners
+              </p>
             </div>
           </div>
         </div>
+          </div>
+
+          
+        </div>
+
+       
       </div>
-
-      <style jsx>{`
-        @keyframes fadeInUp {
-          from {
-            opacity: 0;
-            transform: translateY(30px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        
-        .scrollbar-thin::-webkit-scrollbar {
-          width: 6px;
-        }
-        
-        .scrollbar-thumb-purple-400::-webkit-scrollbar-thumb {
-          background-color: rgb(192 132 252);
-          border-radius: 3px;
-        }
-        
-        .scrollbar-track-gray-100::-webkit-scrollbar-track {
-          background-color: rgb(243 244 246);
-          border-radius: 3px;
-        }
-      `}</style>
     </div>
   );
-};
-
-export default Home;
+}

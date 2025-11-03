@@ -6,10 +6,8 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'Home', href: '#home' },
-    { name: 'Students', href: '#students' },
-    { name: 'Impact', href: '#impact' },
-    { name: 'About', href: '#about' },
-    { name: 'Contact', href: '#contact' }
+    { name: 'Students', href: 'https://codetrainafrica.com' },
+    
   ];
 
   return (
@@ -49,6 +47,7 @@ const Navbar = () => {
               <Heart className="w-5 h-5 transition-transform group-hover:scale-110" />
               Sponsor a Student
             </button>
+            
           </div>
 
           {/* Mobile menu button */}
