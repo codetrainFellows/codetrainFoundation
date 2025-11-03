@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       {/* Our story */}
-      <div className="bg-linear-to-br from-amber-50 to-orange-50 py-16 px-4">
+      <div className="bg-white py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-6xl font-bold text-gray-900 mb-12 text-center">
             Our Story
@@ -14,12 +14,12 @@ export default function Home() {
             {/* Image Grid */}
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&h=400&fit=crop"
+                src="/campus2.jpg"
                 alt="Student 1"
                 className="w-full h-74 object-cover shadow-lg"
               />
               <img
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop"
+                src="/group.jpg"
                 alt="Student 2"
                 className="w-full h-74 object-cover shadow-lg"
               />
