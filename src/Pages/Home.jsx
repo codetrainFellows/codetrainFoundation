@@ -1,159 +1,121 @@
-import React from "react";
-import Donate from "./Donate";
-import Problem from "./Problem";
-import SuccessStory from "./SuccessStory";
+import { Heart, BookOpen, Rocket, Eye } from 'lucide-react';
+import TransparencySection from './Transform';
+import Problem from './Problem';
 
-export default function Home() {
+import PartnerSection from './PartnerSection';
+import CTADonationSection from './CTADonationSection';
+
+
+export default function MissionSection() {
   return (
-    <>
-      {/* Our story */}
-      <div className="bg-white py-16 px-4">
-        <div className="max-w-6xl mx-auto">
-          <h1 className="text-6xl font-bold text-gray-900 mb-12 text-center">
-            Our Story
-          </h1>
-
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
-            {/* Image Grid */}
-            <div className="grid grid-cols-2 gap-4">
-              <img
-                src="/campus2.jpg"
-                alt="Student 1"
-                className="w-full h-74 object-cover shadow-lg"
-              />
-              <img
-                src="/group.jpg"
-                alt="Student 2"
-                className="w-full h-74 object-cover shadow-lg"
-              />
-            </div>
-
-            {/* Text Content */}
-            <div className="flex flex-col justify-center space-y-6">
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Codetrain Codetrain helped me build the skills and confidence to
-                work in tech.
-              </p>
-
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Your donation funds scholarships that unlock careers in
-                technology.
-              </p>
-
-              <p className="text-lg text-gray-700 leading-relaxed">
-                We've grown from 10 students and borrowedlabs to over 100
-                graduates working in 191 countries for tech companies around the
-                world.
-              </p>
-
-              <p className="text-base text-gray-600 italic">
-                — Abigail Codetrain Graduate
-              </p>
-
-              {/* UN SDGs Section */}
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* Our Impact - Redesigned */}
-      <section className="py-20 px-6 bg-gradient-to-b from-white to-gray-50">
-        <div className="max-w-7xl mx-auto">
-          {/* Header */}
-          <div className="text-center mb-16 animate-fade-in">
-            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-4">
-              Our Impact
-            </h1>
-            <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
-              Your donation keeps this door of opportunity open for the next
-              generation
-            </p>
-          </div>
+    <div className="min-h-screen bg-white">
+      {/* Orange Top Border */}
+      <div className="h-2 bg-orange-500" />
+      
+      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-16">
+        {/* Mission Section */}
+        <section className="mb-20">
+          <h2 className="font-bold text-lg mb-4">Our Mission</h2>
+          <h3 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+            We're building Africa's<br />
+            Tech Opportunity Engine
+          </h3>
+          
+          <p className="text-gray-700 text-lg mb-12 max-w-2xl leading-relaxed">
+            Codetrain Foundation exists to remove financial barriers to tech education –<br className="hidden md:block" />
+            so every young African can build, succeed, and support their<br className="hidden md:block" />
+            family and shape the continent's digital future.
+          </p>
 
           {/* Stats Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-            {/* Alumni */}
-            <div className="group text-center transform transition-all duration-300 hover:scale-105 animate-fade-in-up animation-delay-100">
-              <div className="mx-auto w-16 h-16 mb-4 flex items-center justify-center rounded-full bg-blue-100 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                <svg
-                  className="w-8 h-8"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M12 14l9-5-9-5-9 5 9 5z" />
-                  <path d="M12 14l6.16-3.422A12.083 12.083 0 0112 21.5c-2.21 0-4.21-.9-5.66-2.34L12 14z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                Alumni
-              </h3>
-              <p className="text-6xl md:text-7xl font-bold text-blue-600">
-                700<span className="text-4xl">+</span>
-              </p>
-              <p className="text-sm text-gray-500 mt-1">Graduates empowered</p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8  ">
+            <div>
+              <div className="text-4xl md:text-3xl font-bold text-gray-900 mb-2">GH₵120,000+</div>
+              <div className="text-gray-600 text-sm">In scholarships awarded</div>
             </div>
-
-            {/* Job Placement */}
-            <div className="group text-center transform transition-all duration-300 hover:scale-105 animate-fade-in-up animation-delay-300">
-              <div className="mx-auto w-16 h-16 mb-4 flex items-center justify-center rounded-full bg-green-100 text-green-600 group-hover:bg-green-600 group-hover:text-white transition-colors">
-                <svg
-                  className="w-8 h-8"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6v3m-4-3v3m-4-3v3m5 6v3m-4-3v3m-4-3v3"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                Job Placement
-              </h3>
-              <p className="text-6xl md:text-7xl font-bold text-green-600">
-                89<span className="text-4xl">%</span>
-              </p>
-              <p className="text-sm text-gray-500 mt-1">Secured employment</p>
+            <div>
+              <div className="text-4xl md:text-3xl font-bold text-gray-900 mb-2">700+</div>
+              <div className="text-gray-600 text-sm">graduates trained</div>
             </div>
-
-            {/* Rating */}
-            <div className="group text-center transform transition-all duration-300 hover:scale-105 animate-fade-in-up animation-delay-500">
-              <div className="mx-auto w-16 h-16 mb-4 flex items-center justify-center rounded-full bg-amber-100 text-amber-600 group-hover:bg-amber-600 group-hover:text-white transition-colors">
-                <svg
-                  className="w-8 h-8"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                Student Rating
-              </h3>
-              <p className="text-6xl md:text-7xl font-bold text-amber-600">
-                91<span className="text-4xl">%</span>
-              </p>
-              <p className="text-sm text-gray-500 mt-1">Satisfaction rate</p>
+            <div>
+              <div className="text-4xl md:text-3xl font-bold text-gray-900 mb-2">89%</div>
+              <div className="text-gray-600 text-sm">job placement</div>
             </div>
+            <div>
+              <div className="text-4xl md:text-3xl font-bold text-gray-900 mb-2">91%</div>
+              <div className="text-gray-600 text-sm">report improved<br />quality of life</div>
+            </div>
+            
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Donate & Sponsorship */}
-      <Donate />
-      {/* Problem */}
-      <Problem />
-      {/* Success */}
-      <SuccessStory />
-    </>
+        {/* How It Works Section */}
+        <section className='text-center'>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-12">How It Works</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  {/* Step 1: You Sponsor */}
+  <div className="text-center shadow-lg p-6 rounded-lg">
+    <div className="w-20 h-20 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-6">
+      <Heart className="w-10 h-10 text-white fill-white" />
+    </div>
+    <h3 className="text-xl font-bold text-gray-900 mb-4">You Sponsor</h3>
+    <p className="text-gray-600 text-sm leading-relaxed">
+      Choose how to give –<br />
+      any student, or<br />
+      a named scholarship
+    </p>
+  </div>
+
+  {/* Step 2: We Train */}
+  <div className="text-center shadow-lg p-6 rounded-lg">
+    <div className="w-20 h-20 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-6">
+      <BookOpen className="w-10 h-10 text-white" />
+    </div>
+    <h3 className="text-xl font-bold text-gray-900 mb-4">We Train</h3>
+    <p className="text-gray-600 text-sm leading-relaxed">
+      Students complete<br />
+      Codetrain Africa's<br />
+      2-year Software<br />
+      Engineering + AI<br />
+      program
+    </p>
+  </div>
+
+  {/* Step 3: They Thrive */}
+  <div className="text-center shadow-lg p-6 rounded-lg">
+    <div className="w-20 h-20 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-6">
+      <Rocket className="w-10 h-10 text-white" />
+    </div>
+    <h3 className="text-xl font-bold text-gray-900 mb-4">They Thrive</h3>
+    <p className="text-gray-600 text-sm leading-relaxed">
+      Graduates secure jobs<br />
+      and become<br />
+      trailblazers, lifting<br />
+      entire families out<br />
+      of poverty
+    </p>
+  </div>
+
+  
+</div>
+
+
+          {/* CTA Button */}
+          <div className="mt-12">
+            <button className="bg-orange-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-orange-600 transition-colors duration-200 shadow-lg">
+              Start a Named Scholarship
+            </button>
+          </div>
+        </section>
+
+       
+      </div>
+       {/* Additional Sections */}
+      
+        <TransparencySection />
+        <Problem />
+        <PartnerSection />
+        <CTADonationSection />
+    </div>
   );
 }
