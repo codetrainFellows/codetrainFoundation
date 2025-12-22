@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { Menu, X, Heart } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const navLinks = [
     { name: "Home", href: "#home" },
@@ -13,13 +15,46 @@ const Navbar = () => {
     // { name: "Students", href: "https://codetrainafrica.com" },
   ];
 
+  const handleNavClick = (e, href) => {
+    e.preventDefault();
+    
+    // If we're not on the home page, navigate there first
+    if (location.pathname !== '/') {
+      navigate('/');
+      // Wait a bit for the page to load, then scroll
+      setTimeout(() => {
+        const element = document.querySelector(href);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
+      // We're already on home page, just scroll
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+    
+    setMobileMenuOpen(false);
+  };
+
+  const handleLogoClick = (e) => {
+    e.preventDefault();
+    if (location.pathname !== '/') {
+      navigate('/');
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
   return (
     <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="#home" className="flex items-center gap-3 group">
+            <a href="/" onClick={handleLogoClick} className="flex items-center gap-3 group cursor-pointer">
               <img
                 src="/logo1.png"
                 alt="VisionTech Logo"
@@ -35,7 +70,8 @@ const Navbar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="px-5 py-2 text-gray-700 hover:text-teal-600 font-medium transition-all duration-200 relative group rounded-lg hover:bg-teal-50"
+                onClick={(e) => handleNavClick(e, link.href)}
+                className="px-5 py-2 text-gray-700 hover:text-teal-600 font-medium transition-all duration-200 relative group rounded-lg hover:bg-teal-50 cursor-pointer"
               >
                 {link.name}
                 <span className="absolute bottom-1 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-teal-600 transition-all duration-300 group-hover:w-4/5"></span>
@@ -83,8 +119,8 @@ const Navbar = () => {
             <a
               key={link.name}
               href={link.href}
-              className="block px-5 py-3.5 text-gray-700 hover:bg-orange-50 hover:text-orange-600 rounded-xl font-medium transition-all duration-200 transform hover:translate-x-1"
-              onClick={() => setMobileMenuOpen(false)}
+              onClick={(e) => handleNavClick(e, link.href)}
+              className="block px-5 py-3.5 text-gray-700 hover:bg-orange-50 hover:text-orange-600 rounded-xl font-medium transition-all duration-200 transform hover:translate-x-1 cursor-pointer"
               style={{
                 animationDelay: `${index * 50}ms`,
                 animation: mobileMenuOpen
@@ -95,13 +131,15 @@ const Navbar = () => {
               {link.name}
             </a>
           ))}
-          <button
-            className="w-full mt-4 px-6 py-4 bg-gradient-to-r from-teal-500 to-teal-600 rounded-xl font-bold text-white flex items-center justify-center gap-2 shadow-lg shadow-teal-500/30 hover:shadow-xl transition-all duration-300 active:scale-95"
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            <Heart className="w-5 h-5 fill-white" />
-            Sponsor a Student
-          </button>
+          <Link to="https://paystack.shop/pay/vt_4t777qss" target="_blank">
+            <button
+              className="w-full mt-4 px-6 py-4 bg-gradient-to-r from-teal-500 to-teal-600 rounded-xl font-bold text-white flex items-center justify-center gap-2 shadow-lg shadow-teal-500/30 hover:shadow-xl transition-all duration-300 active:scale-95"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              <Heart className="w-5 h-5 fill-white" />
+              Sponsor a Student
+            </button>
+          </Link>
         </div>
       </div>
 
