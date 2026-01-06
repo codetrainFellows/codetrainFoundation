@@ -39,14 +39,14 @@ export default function ChallengesSection() {
                 </div>
                 <div>
                   <p className="text-lg leading-relaxed text-white/95">
-                    Across Ghana and Africa, <span className="font-bold text-teal-200">financial hardship prevents</span> capable youth from accessing tech careers that could uplift their lives and families
-                  </p>
+                    Across Ghana and Africa, <span className="font-bold text-teal-200">thousands</span> of ambitious young people cannot afford the training, equipment, or support needed to begin a tech career.
+                    Without intervention, promising learners risk losing access to programs that could change their lives, and their families’ futures.</p>
                 </div>
               </div>
             </div>
 
             {/* Point 2 */}
-            <div className="group">
+            {/* <div className="group">
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 mt-1 bg-white/10 backdrop-blur-sm p-3 rounded-xl group-hover:bg-white/20 transition-all duration-300">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -61,7 +61,7 @@ export default function ChallengesSection() {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
 
@@ -78,64 +78,23 @@ export default function ChallengesSection() {
               <span className="text-teal-700 text-xs font-semibold">Our Goal for 2026</span>
             </div>
 
-            {/* Main Heading */}
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
-              <span className="text-[#004F4F]">100 Scholarships.</span>
-              <br />
-              <span className="bg-gradient-to-r from-teal-600 to-teal-500 bg-clip-text text-transparent">
-                100 Futures.
-              </span>
-            </h2>
+         {/* Main Heading */}
+<h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-[#004F4F]">
+  <span className="bg-gradient-to-r from-teal-600 to-teal-500 bg-clip-text text-transparent">
+    Empower the Next Generation
+  </span>
+</h2>
 
-            {/* Subheading */}
-            <p className="text-base mb-8 leading-relaxed text-[#004F4F]/80 font-medium">
-              Our fundraising goal includes two urgent priorities:
-            </p>
+{/* Body */}
+<p className="text-base mb-8 leading-relaxed text-[#004F4F]/80 font-medium max-w-2xl">
+  We aim to support <span className="font-bold text-teal-700">100 talented young people</span> with full scholarships for the 2026 cohort, while also ensuring current learners receive the support they need to complete their program and secure employment.
+</p>
 
-            {/* Phase 1 */}
-            <div className="mb-6 group">
-              <div className="bg-white border-2 border-teal-600/20 rounded-xl p-5 hover:border-teal-600/40 hover:shadow-lg transition-all duration-300">
-                <div className="flex items-start gap-4">
-                  <div className="bg-gradient-to-br from-teal-500 to-teal-600 p-2.5 rounded-xl flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                    <Target className="w-5 h-5 text-white" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold mb-2 text-[#004F4F]">
-                      Phase 1—Immediate: Arrears Relief
-                    </h3>
-                    <p className="text-base leading-relaxed text-[#004F4F]/80">
-                      Clear <span className="font-bold text-teal-700 text-lg">$73,000 USD</span> in unpaid tuition so that <span className="font-bold text-teal-700">60 current students</span> can finish their program and secure jobs.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+{/* Closing Line */}
+<p className="text-base md:text-lg leading-relaxed text-[#004F4F]/90 font-semibold max-w-2xl">
+  Together, we can open doors for over <span className="font-bold text-teal-700">160 students</span> through scholarships, mentorship, and essential learning resources.
+</p>
 
-            {/* Phase 2 */}
-            <div className="group mb-6">
-              <div className="bg-white border-2 border-teal-600/20 rounded-xl p-5 hover:border-teal-600/40 hover:shadow-lg transition-all duration-300">
-                <div className="flex items-start gap-4">
-                  <div className="bg-gradient-to-br from-teal-600 to-teal-700 p-2.5 rounded-xl flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                    <TrendingUp className="w-5 h-5 text-white" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold mb-2 text-[#004F4F]">
-                      Phase 2—Future: 100 Scholarships
-                    </h3>
-                    <p className="text-base leading-relaxed text-[#004F4F]/80">
-                      Raise <span className="font-bold text-teal-700 text-lg">$300,000 USD</span> to fully fund <span className="font-bold text-teal-700">100 new scholarships</span> for the 2026 cohort.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Total Impact Callout */}
-            <div className="bg-gradient-to-r from-teal-600 to-teal-700 rounded-xl p-5 text-white text-center shadow-lg">
-              <p className="text-xs font-semibold mb-1 text-teal-100">Total Fundraising Goal</p>
-              <p className="text-4xl font-bold">$373,000</p>
-              <p className="text-sm mt-2 text-teal-100">Transforming 160 lives through tech education</p>
-            </div>
           </div>
         </section>
       </div>

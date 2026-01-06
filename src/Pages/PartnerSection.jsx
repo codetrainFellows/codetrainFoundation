@@ -28,7 +28,7 @@ export default function PartnershipSection() {
           </h2>
           
           <p className="text-xl md:text-2xl text-[#004F4F]/80 max-w-3xl mx-auto leading-relaxed">
-            No gift is too small to transform a life. Every partnership creates ripples of change across Africa.
+           Every contribution creates ripples of change. No gift is too small to transform a life.
           </p>
         </div>
 
@@ -53,7 +53,7 @@ export default function PartnershipSection() {
               
               <h3 className="text-3xl md:text-4xl font-bold mb-4">Corporate Partner</h3>
               <p className="text-lg text-white/90 leading-relaxed mb-6">
-                Co-brand and fund 10–20 scholarships, join our annual showcase, and receive quarterly impact reports. Build your CSR legacy.
+                Co-brand and fund 10–20 scholarships, join our annual showcase, and receive quarterly impact reports. Build a CSR legacy rooted in real transformation.
               </p>
               
               <div className="flex items-center gap-2 text-sm font-semibold">
@@ -83,7 +83,7 @@ export default function PartnershipSection() {
               
               <h3 className="text-3xl md:text-4xl font-bold text-[#004F4F] mb-4">Sponsor a Student</h3>
               <p className="text-lg text-[#004F4F]/80 leading-relaxed mb-6">
-                Fund one learner's full tuition ($3,000 per student) and follow their journey to graduation. Change a life directly.
+                Fund a full scholarship ($3,000) and follow your student’s journey through training, graduation, and employment.
               </p>
               
               <div className="flex items-center gap-2 text-sm font-semibold text-teal-600">
@@ -112,7 +112,7 @@ export default function PartnershipSection() {
               
               <h3 className="text-3xl md:text-4xl font-bold text-[#004F4F] mb-4">Donate Any Amount</h3>
               <p className="text-lg text-[#004F4F]/80 leading-relaxed mb-6">
-                Give $20–$100/month and help sustain scholarships year-round. Every contribution counts.
+                Give monthly or one-time support to keep scholarships and essential resources running year-round.
               </p>
               
               <div className="flex items-center gap-2 text-sm font-semibold text-teal-600">
@@ -139,7 +139,7 @@ export default function PartnershipSection() {
               
               <h3 className="text-3xl md:text-4xl font-bold mb-4">Mentor / Provide Equipment</h3>
               <p className="text-lg text-white/90 leading-relaxed mb-6">
-                Share your expertise or donate laptops, helping students learn with dignity and proper tools.
+                Share your expertise or donate laptops to help students learn with dignity and the tools they deserve.
               </p>
               
               <div className="flex items-center gap-2 text-sm font-semibold">

@@ -14,18 +14,12 @@ export default function MissionImpactSection() {
         <section className="flex flex-col p-12 bg-[#FFF8E7]">
           <h2 className="font-bold text-lg mb-4 text-[#004F4F]">Our Mission</h2>
           <h3 className="text-4xl md:text-5xl font-bold text-[#004F4F] mb-6 leading-tight">
-            We're building Africa's
-            <br />
-            Tech Opportunity Engine
+            Building Africa’s Tech Opportunity Engine
           </h3>
 
           <p className="text-[#004F4F] text-lg mb-12 max-w-2xl leading-relaxed">
-            Codetrain Foundation exists to remove financial barriers to tech
-            education –
-            <br className="hidden md:block" />
-            so every young African can build, succeed, and support their
-            <br className="hidden md:block" />
-            family and shape the continent's digital future.
+            Codetrain Foundation removes financial barriers to tech education, enabling young Africans to learn, succeed, support their families, and shape the continent’s digital future.
+            
           </p>
         </section>
 
@@ -42,7 +36,7 @@ export default function MissionImpactSection() {
             Codetrain Africa is one of Ghana's leading <strong>SOFTWARE ENGINEERING & DESIGN SCHOOLS</strong>, training young Africans to thrive in the global digital economy.
           </p> */}
            <p className="mb-12 text-lg leading-relaxed max-w-2xl">
-           Through our partnership with <strong>Codetrain Africa</strong> Ghana's leading softawre Engineering design school, we have succesfully made a big impact resulting in great student to emplyment outcomes.
+           Through our partnership with <strong>Codetrain Africa</strong> Ghana’s leading Software Engineering & Digital Design school,we help students access world-class training and achieve life-changing careers.
           </p>
 
           {/* Statistics Cards */}
@@ -54,7 +48,7 @@ export default function MissionImpactSection() {
                   <Users className="w-8 h-8 text-white" />
                 </div>
                 <div className="text-5xl font-bold mb-3">700+</div>
-                <div className="text-white/90 text-base">graduates trained across Ghana</div>
+                <div className="text-white/90 text-base">Graduates trained across Ghana</div>
               </div>
             </div>
 
@@ -65,7 +59,7 @@ export default function MissionImpactSection() {
                   <Briefcase className="w-8 h-8 text-white" />
                 </div>
                 <div className="text-5xl font-bold mb-3">89%</div>
-                <div className="text-white/90 text-base">job placement rate within 6 months</div>
+                <div className="text-white/90 text-base">Job placement rate within 6 months</div>
               </div>
             </div>
 
@@ -77,7 +71,7 @@ export default function MissionImpactSection() {
                 </div>
                 <div className="text-5xl font-bold mb-3">91%</div>
                 <div className="text-white/90 text-base mb-2">
-                  of alumni report improved quality of life
+                  Alumni report improved quality of life
                 </div>
                 <span className="text-xs text-white/70">(60 Decibels Impact Report, 2023)</span>
               </div>

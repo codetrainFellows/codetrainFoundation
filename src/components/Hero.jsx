@@ -37,21 +37,34 @@ export default function DonationHero() {
               </p>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 mb-12">
-                <button className="bg-white text-teal-900 px-6 md:px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-200 shadow-lg hover:shadow-xl flex items-center justify-center gap-2 group text-sm md:text-base">
-                  <span className="flex flex-col sm:flex-row items-center gap-1 sm:gap-2">
-                    <span>Sponsor a Student</span>
-                  </span>
-                </button>
+              <div className="flex flex-col sm:flex-row gap-4 mb-6">
+  {/* First Button – unchanged */}
+  <button className="bg-white text-teal-900 px-6 md:px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-200 shadow-lg hover:shadow-xl flex items-center justify-center gap-2 text-sm md:text-base">
+    Sponsor a Student
+  </button>
 
-                <Link 
-                  to="/Appointment"
-                  className="bg-transparent border-2 border-white text-white px-6 md:px-8 py-4 rounded-lg font-black hover:bg-white/10 transition-all duration-200 text-sm md:text-base whitespace-nowrap text-center"
-                >
-                  Partner with us <br />
-                  <span className="font-thin">Schedule a meeting</span>
-                </Link>
-              </div>
+  {/* Second Button – redesigned */}
+  <Link
+    to="/Appointment"
+    className="group relative overflow-hidden border-2 border-white/70 text-white px-6 md:px-8 py-4 rounded-lg font-semibold transition-all duration-300 text-sm md:text-base text-center backdrop-blur-sm hover:border-white hover:shadow-xl"
+  >
+    {/* Hover background effect */}
+    <span className="absolute inset-0 bg-white/10 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
+
+    <span className="relative z-10 flex flex-col items-center leading-tight">
+      <span className="tracking-wide">Partner with Us</span>
+      <span className="text-xs md:text-sm font-light opacity-90 mt-1">
+        Schedule a meeting
+      </span>
+    </span>
+  </Link>
+</div>
+
+{/* Supporting text */}
+<p className="text-white/80 text-sm md:text-base  mx-auto">
+  Your support opens doors for the next generation of African innovators.
+</p>
+
 
               {/* Partner Logos */}
               {/* <h1 className="text-white mb-3">Supported by</h1>
