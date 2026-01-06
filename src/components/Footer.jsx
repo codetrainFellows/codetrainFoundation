@@ -1,28 +1,10 @@
-import { Linkedin, Instagram, Youtube } from 'lucide-react';
-
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white">
-      {/* Main Footer Content */}
-    
-
-      {/* Bottom Footer Line */}
-      <div className="border-t border-gray-800">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-6">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
-            <div className="text-center md:text-left">
-              Registered under Codetrain Foundation Ghana | © 2025 Codetrain Foundation
-            </div>
-            <div>
-              <a 
-                href="#privacy" 
-                className="hover:text-orange-400 transition-colors duration-200"
-              >
-                Privacy & Transparency Policy
-              </a>
-            </div>
-          </div>
-        </div>
+    <footer className="bg-gray-900 text-white py-6 flex-shrink-0">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 text-center text-sm text-gray-300 space-y-1">
+        <p>© 2025 Codetrain Foundation Ghana</p>
+        <p>Registered Nonprofit | <a href="#privacy" className="hover:text-teal-400 transition-colors">Privacy & Transparency Policy</a></p>
+        <p>Contact: <a href="mailto:empower@codetrainfoundation.org" className="hover:text-teal-400 transition-colors">empower@codetrainfoundation.org</a></p>
       </div>
     </footer>
   );

@@ -168,16 +168,16 @@ export default function PartnershipSection() {
               <div className="flex flex-col sm:flex-row items-center gap-2 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-xl">
                 <span className="font-semibold">Contact:</span>
                 <a 
-                  href="mailto:empower@codetrainafrica.com" 
+                  href="mailto:empower@codetrainfoundation.org" 
                   className="underline hover:text-teal-200 transition-colors font-medium"
                 >
-                  empower@codetrainafrica.com
+                  empower@codetrainfoundation.org
                 </a>
               </div>
               
               <div className="hidden lg:block w-px h-8 bg-white/30" />
               
-              <div className="flex flex-col sm:flex-row items-center gap-2 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-xl">
+              {/* <div className="flex flex-col sm:flex-row items-center gap-2 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-xl">
                 <span className="font-semibold">Admission</span>
                 <a 
                   href="https://www.codetrainfoundation.org" 
@@ -187,7 +187,7 @@ export default function PartnershipSection() {
                 >
                   codetrainadmissions@codetrainafrica.com
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

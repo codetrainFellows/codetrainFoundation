@@ -36,7 +36,7 @@ export default function MissionImpactSection() {
             Codetrain Africa is one of Ghana's leading <strong>SOFTWARE ENGINEERING & DESIGN SCHOOLS</strong>, training young Africans to thrive in the global digital economy.
           </p> */}
            <p className="mb-12 text-lg leading-relaxed max-w-2xl">
-           Through our partnership with <strong>Codetrain Africa</strong> Ghana’s leading Software Engineering & Digital Design school,we help students access world-class training and achieve life-changing careers.
+           Through our partnership with <strong>Codetrain Africa</strong>  Ghana’s leading Software Engineering & Digital Design school, we help students access world-class training and achieve life-changing careers.
           </p>
 
           {/* Statistics Cards */}

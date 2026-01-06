@@ -10,12 +10,12 @@ export default function AlumniSuccessPage() {
       impact: "Economic Independence"
     },
     {
-      quote: "I successfully created mobile apps—things I could never do before.",
+      quote: "I built my first mobile apps — something I never believed I could do.",
       author: "Female, 35",
       impact: "New Skills Unlocked"
     },
     {
-      quote: "I can now solve problems and contribute in my community.",
+      quote: "I can now solve problems in my community using tech.",
       author: "Male, 26",
       impact: "Community Impact"
     }
@@ -47,7 +47,7 @@ export default function AlumniSuccessPage() {
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-700 max-w-3xl mb-16">
-            Every scholarship writes a new story. Here are voices from those who've walked the journey.
+            Every scholarship writes a new story. Here are voices from those whose lives have changed through tech education
           </p>
 
           {/* Featured Story Card */}
@@ -73,8 +73,7 @@ export default function AlumniSuccessPage() {
                   <div>
                     <h3 className="text-xl font-bold text-teal-600 mb-3">The Challenge</h3>
                     <p className="text-gray-700 leading-relaxed text-lg">
-                      A young woman with sickle cell disease, working as a salesgirl for just $90/month. 
-                      Physical demands of the job threatened her health. Limited income meant limited options.
+                     A young woman living with sickle cell disease earned $90/month as a salesgirl. The physical demands threatened her health, and her income kept her trapped.
                     </p>
                   </div>
                 </div>
@@ -84,8 +83,7 @@ export default function AlumniSuccessPage() {
                   <div>
                     <h3 className="text-xl font-bold text-teal-600 mb-3">The Transformation</h3>
                     <p className="text-gray-700 leading-relaxed text-lg">
-                      Through Codetrain, she learned software development and transitioned into a flexible 
-                      remote role that accommodates her health needs while providing financial stability.
+                      Through Codetrain, she learned software development and transitioned into a flexible remote role that supports her health and provides financial stability.
                     </p>
                   </div>
                 </div>
@@ -95,9 +93,9 @@ export default function AlumniSuccessPage() {
                 <div className="bg-gradient-to-br from-teal-50 to-teal-100/50 border border-teal-200 rounded-2xl p-6 md:p-8 h-full flex flex-col justify-center">
                   <Quote className="w-10 h-10 text-teal-600 mb-4" />
                   <blockquote className="text-xl md:text-2xl text-gray-900 italic leading-relaxed mb-6">
-                    "Working in tech saved my life... I never imagined I could have this kind of future."
+                    "Working in tech saved my life. I never imagined I could have this kind of future."
                   </blockquote>
-                  <p className="text-teal-700 font-semibold">— Female Graduate</p>
+                  <p className="text-teal-700 font-semibold"> Female Graduate</p>
                 </div>
               </div>
             </div>
@@ -173,7 +171,8 @@ export default function AlumniSuccessPage() {
                 <p className="text-xl md:text-2xl text-white/90 leading-relaxed">
                   It is{" "}
                   <span className="text-white font-bold">dignity</span>,{" "}
-                  <span className="text-white font-bold">opportunity</span>, and a{" "}
+                  <span className="text-white font-bold">opportunity</span>,
+                  <span className="text-white font-bold">empowerment</span>, and a{" "}
                   <span className="text-white font-bold">new beginning</span>.
                 </p>
 
@@ -195,7 +194,7 @@ export default function AlumniSuccessPage() {
             Ready to Write More Success Stories?
           </h3>
           <p className="text-xl text-gray-600 mb-10">
-            Your support can transform lives and create opportunities for talented young Africans
+           Your support helps talented young Africans gain access to life-changing tech careers.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
              <Link to="https://paystack.shop/pay/vt_4t777qss" target="_blank">
