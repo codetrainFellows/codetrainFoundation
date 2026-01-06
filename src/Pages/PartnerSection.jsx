@@ -37,7 +37,7 @@ export default function PartnershipSection() {
 
           {/* Corporate Partner - Premium Card */}
           <Link 
-            to="/Appointment"
+            to="/partner"
             className="group relative bg-gradient-to-br from-teal-600 to-teal-700 p-8 md:p-10 rounded-3xl text-white shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] overflow-hidden"
           >
             {/* Animated Background Glow */}
@@ -65,7 +65,7 @@ export default function PartnershipSection() {
 
           {/* Sponsor a Student - Premium Card */}
           <a 
-            href="https://paystack.shop/pay/vt_4t777qss"
+            href="/sponsor"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative bg-white p-8 md:p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] overflow-hidden border-2 border-teal-600/30"
@@ -95,7 +95,7 @@ export default function PartnershipSection() {
 
           {/* Monthly Donor */}
           <a 
-            href="https://paystack.shop/pay/vt_4t777qss"
+            href="/sponsor"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative bg-white p-8 md:p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] overflow-hidden border-2 border-teal-600/30"

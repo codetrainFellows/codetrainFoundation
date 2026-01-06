@@ -39,13 +39,15 @@ export default function DonationHero() {
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 mb-6">
   {/* First Button – unchanged */}
+  <Link to="/sponsor" target="_blank">
   <button className="bg-white text-teal-900 px-6 md:px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-200 shadow-lg hover:shadow-xl flex items-center justify-center gap-2 text-sm md:text-base">
     Sponsor a Student
   </button>
+  </Link>
 
   {/* Second Button – redesigned */}
   <Link
-    to="/Appointment"
+    to="/partner"
     className="group relative overflow-hidden border-2 border-white/70 text-white px-6 md:px-8 py-4 rounded-lg font-semibold transition-all duration-300 text-sm md:text-base text-center backdrop-blur-sm hover:border-white hover:shadow-xl"
   >
     {/* Hover background effect */}

@@ -197,14 +197,16 @@ export default function AlumniSuccessPage() {
            Your support helps talented young Africans gain access to life-changing tech careers.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-             <Link to="https://paystack.shop/pay/vt_4t777qss" target="_blank">
+             <Link to="/sponsor" target="_blank">
             <button className="bg-gradient-to-r from-teal-500 to-teal-600 text-white px-8 py-4 rounded-lg font-semibold hover:from-teal-600 hover:to-teal-700 transition-all duration-300 shadow-lg hover:shadow-teal-500/50 hover:scale-105">
               Sponsor a Student
             </button>
             </Link>
+              <Link to="/partner" target="_blank">
             <button className="bg-white border-2 border-teal-500 text-teal-700 px-8 py-4 rounded-lg font-semibold hover:bg-teal-50 transition-all duration-300">
-              Learn More About Our Impact
+              Partner with Us
             </button>
+            </Link>
           </div>
         </div>
       </section>
