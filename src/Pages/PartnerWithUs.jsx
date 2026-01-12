@@ -20,32 +20,32 @@ export default function PartnerWithUs() {
     {
       icon: <Users className="w-6 h-6" />,
       title: "Fund 10–20 scholarships annually",
-      description: "across both programs"
+      description: "Across our Software Engineering and Digital Product Design programs — or support fewer students if preferred."
     },
     {
       icon: <Target className="w-6 h-6" />,
-      title: "Support students from training",
-      description: "through internship and into employment"
+      title: "Support learners on the journey you care about most",
+      description: "From training to internship to employment — or focus on specific stages where you'd like to make the greatest difference."
     },
     {
       icon: <FileText className="w-6 h-6" />,
       title: "Receive transparent quarterly reports",
-      description: "on student progress and outcomes"
+      description: "Fully track progress, stories, and outcomes for the students or initiatives you support."
     },
     {
       icon: <Award className="w-6 h-6" />,
-      title: "Co-brand with us",
-      description: "on impact stories, campaigns, and events"
+      title: "Optional co-branding opportunities",
+      description: "Join us on impact stories, campaigns, and events — only if this aligns with your brand and goals."
     },
     {
       icon: <Handshake className="w-6 h-6" />,
-      title: "Engage with students",
-      description: "through mentorship, workshops, and hiring opportunities"
+      title: "Engage with students in ways that suit you",
+      description: "Mentorship, guest workshops, internship opportunities, or simply cheering them on from afar."
     },
     {
       icon: <TrendingUp className="w-6 h-6" />,
-      title: "Back a school with strong employment",
-      description: "outcomes and proven impact"
+      title: "Back a school with strong employment outcomes",
+      description: "Codetrain has a proven track record of helping young Africans launch successful tech careers."
     }
   ];
 
@@ -222,13 +222,74 @@ export default function PartnerWithUs() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Let's Explore{" "}
+              Schedule a {" "}
               <span className="bg-gradient-to-r from-teal-600 to-teal-500 bg-clip-text text-transparent">
-                How We Can Work Together
+                Partnership Meeting
               </span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Whether your goals are CSR, talent development, innovation, or youth empowerment, we'd love to learn about your priorities and shape a partnership that delivers measurable, long-term impact.
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
+              Let's Explore How We Can Work Together
+            </p>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Whether your focus is CSR, talent development, innovation, or youth empowerment, we're here to understand your priorities and design a partnership that delivers measurable, long-term impact for your organisation.
+            </p>
+          </div>
+
+          {/* How to Get Started */}
+          <div className="max-w-4xl mx-auto mb-16">
+            <h3 className="text-3xl font-bold text-gray-900 text-center mb-10">
+              How to Get Started
+            </h3>
+            
+            <div className="grid md:grid-cols-3 gap-8">
+              {/* Step 1 */}
+              <div className="text-center">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-teal-600 text-white rounded-full text-2xl font-bold mb-4">
+                  1
+                </div>
+                <h4 className="text-xl font-bold text-gray-900 mb-3">
+                  Share Your Goals
+                </h4>
+                <p className="text-gray-600 leading-relaxed">
+                  Tell us what matters most to your organisation — CSR, employment pathways, diversity, innovation, or talent development.
+                </p>
+              </div>
+
+              {/* Step 2 */}
+              <div className="text-center">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-teal-600 text-white rounded-full text-2xl font-bold mb-4">
+                  2
+                </div>
+                <h4 className="text-xl font-bold text-gray-900 mb-3">
+                  Explore Partnership Options
+                </h4>
+                <p className="text-gray-600 leading-relaxed">
+                  We'll walk you through flexible ways to get involved: scholarships, internships, training support, talent pipelines, mentorship, and more.
+                </p>
+              </div>
+
+              {/* Step 3 */}
+              <div className="text-center">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-teal-600 text-white rounded-full text-2xl font-bold mb-4">
+                  3
+                </div>
+                <h4 className="text-xl font-bold text-gray-900 mb-3">
+                  Co-Create an Impact Plan
+                </h4>
+                <p className="text-gray-600 leading-relaxed">
+                  Together, we build a tailored partnership that fits your objectives and capacity.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Book a Time heading */}
+          <div className="text-center mb-8">
+            <h3 className="text-3xl font-bold text-gray-900 mb-4">
+              Book a Time That Works for You
+            </h3>
+            <p className="text-lg text-gray-600">
+              Choose a convenient slot and let's start shaping meaningful impact together.
             </p>
           </div>
 
@@ -239,14 +300,14 @@ export default function PartnerWithUs() {
                 Schedule a Partnership Meeting
               </h3>
               <p className="text-teal-100">
-                Choose a time that works best for you
+                Let’s Explore How We Can Work Together 
               </p>
             </div>
             
             <div className="p-4 md:p-8">
               <div 
                 className="calendly-inline-widget" 
-                data-url="https://calendly.com/joshuadoe168/coding"
+                data-url="https://calendly.com/codetrain-foundation-codetrainfoundation/30min"
                 style={{ minWidth: '320px', height: '700px' }}
               />
             </div>
@@ -269,7 +330,7 @@ export default function PartnerWithUs() {
       </section>
 
       {/* Partnership Types Section */}
-      <section className="py-20 bg-gradient-to-br from-teal-600 to-teal-700 text-white">
+      {/* <section className="py-20 bg-gradient-to-br from-teal-600 to-teal-700 text-white">
         <div className="max-w-5xl mx-auto px-6 text-center">
           <h3 className="text-3xl md:text-4xl font-bold mb-6">
             Partnership Opportunities
@@ -306,7 +367,7 @@ export default function PartnerWithUs() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

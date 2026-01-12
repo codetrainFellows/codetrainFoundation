@@ -4,8 +4,8 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './Pages/Home'
 import Appointment from './Pages/Appointment'
- import SponsorStudent from './Pages/SponsorStudent'
-   import PartnerWithUs from './Pages/PartnerWithUs'
+import SponsorStudent from './Pages/SponsorStudent'
+import PartnerWithUs from './Pages/PartnerWithUs'
 
 
 function App() {
