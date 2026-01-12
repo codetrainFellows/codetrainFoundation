@@ -63,7 +63,7 @@ export default function DonationHero() {
 </div>
 
 {/* Supporting text */}
-<p className="text-white/80 text-sm md:text-base  mx-auto">
+<p className="text-white/80 text-sm md:text-base  mx-auto mb-4">
   Your support opens doors for the next generation of African innovators.
 </p>
 

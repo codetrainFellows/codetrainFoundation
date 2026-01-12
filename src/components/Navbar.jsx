@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X, Heart } from "lucide-react";
+import { Menu, X, Heart, Handshake } from "lucide-react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 
 const Navbar = () => {
@@ -79,9 +79,18 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden lg:flex items-center">
-            <Link to="/sponsor" target="_blank">
+          {/* CTA Buttons */}
+          <div className="hidden lg:flex items-center gap-3">
+            {/* Partner with Us Button */}
+            <Link to="/partner">
+              <button className="group relative px-6 py-3 bg-white border-2 border-teal-600 rounded-xl font-bold text-teal-600 transition-all duration-300 flex items-center gap-2 hover:bg-teal-50 hover:scale-105 active:scale-95 overflow-hidden">
+                <Handshake className="w-5 h-5 relative z-10 transition-transform group-hover:scale-110" />
+                <span className="relative z-10">Partner with Us</span>
+              </button>
+            </Link>
+            
+            {/* Sponsor a Student Button */}
+            <Link to="/sponsor">
               <button className="group relative px-6 py-3 bg-gradient-to-r from-teal-500 to-teal-600 rounded-xl font-bold text-white transition-all duration-300 flex items-center gap-2 shadow-lg shadow-teal-500/30 hover:shadow-xl hover:shadow-teal-500/50 hover:scale-105 active:scale-95 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-r from-teal-500 to-teal-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <Heart className="w-5 h-5 relative z-10 transition-transform group-hover:scale-110 fill-white" />
@@ -131,9 +140,21 @@ const Navbar = () => {
               {link.name}
             </a>
           ))}
-          <Link to="https://paystack.shop/pay/vt_4t777qss" target="_blank">
+          
+          {/* Mobile CTA Buttons */}
+          <Link to="/partner">
             <button
-              className="w-full mt-4 px-6 py-4 bg-gradient-to-r from-teal-500 to-teal-600 rounded-xl font-bold text-white flex items-center justify-center gap-2 shadow-lg shadow-teal-500/30 hover:shadow-xl transition-all duration-300 active:scale-95"
+              className="w-full mt-4 px-6 py-4 bg-white border-2 border-teal-600 rounded-xl font-bold text-teal-600 flex items-center justify-center gap-2 hover:bg-teal-50 transition-all duration-300 active:scale-95"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              <Handshake className="w-5 h-5" />
+              Partner with Us
+            </button>
+          </Link>
+          
+          <Link to="/sponsor">
+            <button
+              className="w-full mt-3 px-6 py-4 bg-gradient-to-r from-teal-500 to-teal-600 rounded-xl font-bold text-white flex items-center justify-center gap-2 shadow-lg shadow-teal-500/30 hover:shadow-xl transition-all duration-300 active:scale-95"
               onClick={() => setMobileMenuOpen(false)}
             >
               <Heart className="w-5 h-5 fill-white" />
