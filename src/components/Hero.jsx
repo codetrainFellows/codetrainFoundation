@@ -38,34 +38,34 @@ export default function DonationHero() {
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 mb-6">
-  {/* First Button – unchanged */}
-  <Link to="/sponsor">
-  <button className="bg-white text-teal-900 px-6 md:px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-200 shadow-lg hover:shadow-xl flex items-center justify-center gap-2 text-sm md:text-base">
-    Sponsor a Student
-  </button>
-  </Link>
+                {/* Sponsor a Student Button */}
+                <Link to="/sponsor" className="block">
+                  <button className="w-full bg-white text-teal-900 px-6 md:px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-200 shadow-lg hover:shadow-xl flex items-center justify-center gap-2 text-sm md:text-base">
+                    Sponsor a Student
+                  </button>
+                </Link>
 
-  {/* Second Button – redesigned */}
-  <Link
-    to="/partner"
-    className="group relative overflow-hidden border-2 border-white/70 text-white px-6 md:px-8 py-4 rounded-lg font-semibold transition-all duration-300 text-sm md:text-base text-center backdrop-blur-sm hover:border-white hover:shadow-xl"
-  >
-    {/* Hover background effect */}
-    <span className="absolute inset-0 bg-white/10 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
+                {/* Partner with Us Button */}
+                <Link
+                  to="/partner"
+                  className="group relative overflow-hidden border-2 border-white/70 text-white px-6 md:px-8 py-4 rounded-lg font-semibold transition-all duration-300 text-sm md:text-base text-center backdrop-blur-sm hover:border-white hover:shadow-xl"
+                >
+                  {/* Hover background effect */}
+                  <span className="absolute inset-0 bg-white/10 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
 
-    <span className="relative z-10 flex flex-col items-center leading-tight">
-      <span className="tracking-wide">Partner with Us</span>
-      <span className="text-xs md:text-sm font-light opacity-90 mt-1">
-        Schedule a meeting
-      </span>
-    </span>
-  </Link>
-</div>
+                  <span className="relative z-10 flex flex-col items-center leading-tight">
+                    <span className="tracking-wide">Partner with Us</span>
+                    <span className="text-xs md:text-sm font-light opacity-90 mt-1">
+                      Schedule a meeting
+                    </span>
+                  </span>
+                </Link>
+              </div>
 
-{/* Supporting text */}
-<p className="text-white/80 text-sm md:text-base  mx-auto mb-4">
-  Your support opens doors for the next generation of African innovators.
-</p>
+              {/* Supporting text */}
+              <p className="text-white/80 text-sm md:text-base mx-auto mb-4">
+                Your support opens doors for the next generation of African innovators.
+              </p>
 
 
               {/* Partner Logos */}
