@@ -1,29 +1,33 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import './App.css'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
-import Home from './Pages/Home'
-import Appointment from './Pages/Appointment'
-import SponsorStudent from './Pages/SponsorStudent'
-import PartnerWithUs from './Pages/PartnerWithUs'
 
+import React from 'react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import IntroSection from './components/IntroSection';
+import MissionSection from './components/MissionSection';
+import ImpactSection from './components/ImpactSection';
+import WhatWeFund from './components/WhatWeFund';
+import InclusionSection from './components/InclusionSection';
+import Focus2026 from './components/Focus2026';
+import SupportSection from './components/SupportSection';
+import Footer from './components/Footer';
 
-function App() {
+const App = () => {
   return (
-    <BrowserRouter>
+    <div className="min-h-screen bg-white text-slate-900 selection:bg-teal-100 font-['Inter']">
       <Navbar />
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Appointment" element={<Appointment />} />
-       
-   <Route path="/sponsor" element={<SponsorStudent />} />
-   <Route path="/partner" element={<PartnerWithUs />} />
-      </Routes>
-
+      <main>
+        <Hero />
+        <IntroSection />
+        <MissionSection />
+        <ImpactSection />
+        <WhatWeFund />
+        <InclusionSection />
+        <Focus2026 />
+        <SupportSection />
+      </main>
       <Footer />
-    </BrowserRouter>
-  )
-}
+    </div>
+  );
+};
 
-export default App
+export default App;
