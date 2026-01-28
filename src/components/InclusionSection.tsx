@@ -82,11 +82,11 @@ const InclusionSection: React.FC = () => {
               {/* CTA 1 */}
               <div className="flex flex-col sm:flex-row items-center gap-4 group">
                 <a href='https://donate.stripe.com/fZu00kcoq6v04Yr8i91ZS0b'>
-                <button className="w-full sm:w-auto min-w-[200px] bg-[#3b6f71] text-white px-6 py-3 rounded-lg font-bold text-sm transition-all hover:bg-[#2d5557] shadow-lg cursor-pointer">
+                <button className="w-full sm:w-auto min-w-[200px] bg-[#3b6f71] text-white px-16.5 py-3 rounded-lg font-bold text-sm transition-all hover:bg-[#2d5557] shadow-lg cursor-pointer">
                   Donate via KATO
                 </button>
                 </a>
-                <p className="text-slate-500 text-xs lg:text-sm font-medium">Support a student through a scholarship</p>
+                <p className="text-slate-600 text-xs lg:text-sm font-medium">Support a student through a scholarship</p>
               </div>
 
               {/* CTA 2 */}
@@ -96,7 +96,7 @@ const InclusionSection: React.FC = () => {
                   Fund a Scholarship Program
                 </button>
                 </Link>
-                <p className="text-slate-500 text-xs lg:text-sm font-medium">For companies, nonprofits, and partners sponsoring multiple scholars</p>
+                <p className="text-slate-600 text-xs lg:text-sm font-medium">For companies, nonprofits, and partners sponsoring multiple scholars</p>
               </div>
             </div>
           </div>
