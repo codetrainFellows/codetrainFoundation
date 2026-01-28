@@ -25,17 +25,9 @@ const Footer: React.FC = () => {
             </a>
           </div>
 
-          <span className="hidden md:inline text-slate-300">|</span>
+          
 
-          <div className="flex items-center gap-2">
-            <span className="text-[#00838f]">📧</span>
-            <a
-              href="mailto:partnerships@codetrainfoundation.org"
-              className="text-slate-600 hover:text-[#00838f] font-semibold transition-colors"
-            >
-               empower@codetrainfoundation.org
-            </a>
-          </div>
+         
         </div>
 
         {/* Social Links */}

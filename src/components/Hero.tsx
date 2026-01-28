@@ -53,7 +53,7 @@ const Hero: React.FC = () => {
             <a href='https://donate.stripe.com/fZu00kcoq6v04Yr8i91ZS0b'>
   <button 
     onClick={handleScrollToImpact}
-    className="w-full sm:w-auto bg-[#dae5e7] text-[#1a3a3a] px-10 py-4 rounded-lg text-lg text-left font-bold hover:bg-white transition-all shadow-xl active:scale-95 cursor-pointer"
+    className="w-full  sm:w-auto bg-[#dae5e7] text-[#1a3a3a] px-10 py-4 rounded-lg text-lg text-left font-bold hover:bg-white transition-all shadow-xl active:scale-95 cursor-pointer"
   >
     Donate via KATO
     <div className="text-xs font-normal opacity-60 mt-1">Support a student through a scholarship</div>

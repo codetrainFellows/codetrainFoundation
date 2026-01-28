@@ -2,13 +2,14 @@
 import React from 'react';
 import image from "../assets/group.jpg"
 import { Link } from 'react-router-dom';
+import pic1 from "../assets/image1.jpg";
 
 const InclusionSection: React.FC = () => {
   const cards = [
     {
       title: "Low-Income Learners",
       description: "For learners unable to afford market-rate training",
-      image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=400",
+      image: {pic1},
       bgColor: "bg-[#f8f9fb]"
     },
     {
