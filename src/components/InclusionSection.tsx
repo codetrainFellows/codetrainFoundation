@@ -1,6 +1,7 @@
 
 import React from 'react';
 import image from "../assets/group.jpg"
+import { Link } from 'react-router-dom';
 
 const InclusionSection: React.FC = () => {
   const cards = [
@@ -85,15 +86,17 @@ const InclusionSection: React.FC = () => {
                   Donate via KATO
                 </button>
                 </a>
-                <p className="text-slate-500 text-xs lg:text-sm font-medium">Simple, tax-efficient giving</p>
+                <p className="text-slate-500 text-xs lg:text-sm font-medium">Support a student through a scholarship</p>
               </div>
 
               {/* CTA 2 */}
               <div className="flex flex-col sm:flex-row items-center gap-4 group">
-                <button className="w-full sm:w-auto min-w-[200px] bg-[#3b6f71] text-white px-6 py-3 rounded-lg font-bold text-sm transition-all hover:bg-[#2d5557] shadow-lg cursor-pointer">
-                  Fund a Scholarship
+                <Link to="/fund-scholarship">
+                <button className="w-full sm:w-auto min-w-[250px] bg-[#3b6f71] text-white px-6 py-3 rounded-lg font-bold text-sm transition-all hover:bg-[#2d5557] shadow-lg cursor-pointer">
+                  Fund a Scholarship Program
                 </button>
-                <p className="text-slate-500 text-xs lg:text-sm font-medium">Sponsor one or more full scholarships</p>
+                </Link>
+                <p className="text-slate-500 text-xs lg:text-sm font-medium">For companies, nonprofits, and partners sponsoring multiple scholars</p>
               </div>
             </div>
           </div>

@@ -51,21 +51,23 @@ const Hero: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-5 items-center">
             {/* Donate via KATO Button */}
             <a href='https://donate.stripe.com/fZu00kcoq6v04Yr8i91ZS0b'>
-            <button 
-              onClick={handleScrollToImpact}
-              className="w-full sm:w-auto bg-[#dae5e7] text-[#1a3a3a] px-10 py-4 rounded-lg text-lg font-bold hover:bg-white transition-all shadow-xl active:scale-95 cursor-pointer"
-            >
-              Donate via KATO
-            </button>
-            </a>
+  <button 
+    onClick={handleScrollToImpact}
+    className="w-full sm:w-auto bg-[#dae5e7] text-[#1a3a3a] px-10 py-4 rounded-lg text-lg text-left font-bold hover:bg-white transition-all shadow-xl active:scale-95 cursor-pointer"
+  >
+    Donate via KATO
+    <div className="text-xs font-normal opacity-60 mt-1">Support a student through a scholarship</div>
+  </button>
+</a>
             
             {/* Fund a Scholarship Button */}
             <Link to="/fund-scholarship">
             <button 
               onClick={handleScrollToImpact}
-              className="w-full sm:w-auto bg-[#234e4e] border border-white/30 text-white px-10 py-4 rounded-lg text-lg font-bold hover:bg-[#1a3a3a] transition-all shadow-xl active:scale-95 cursor-pointer"
+              className="w-full sm:w-auto bg-[#234e4e] border border-white/30 text-white px-10 py-4 text-left rounded-lg text-lg font-bold hover:bg-[#1a3a3a] transition-all shadow-xl active:scale-95 cursor-pointer"
             >
-              Fund a Scholarship
+              Fund a Scholarship Program
+              <div className="text-xs font-normal opacity-60 mt-1">For organizations sponsoring multiple scholars</div>
             </button>
             </Link>
           </div>

@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
               href="mailto:partnerships@codetrainfoundation.org"
               className="text-slate-600 hover:text-[#00838f] font-semibold transition-colors"
             >
-              partnerships@codetrainfoundation.org
+               empower@codetrainfoundation.org
             </a>
           </div>
         </div>

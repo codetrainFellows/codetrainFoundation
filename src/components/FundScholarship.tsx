@@ -39,7 +39,7 @@ const FundScholarship: React.FC = () => {
             <p className="text-sm text-slate-500">
               Have questions before booking? Email us at{' '}
               <a 
-                href="mailto:partnerships@codetrainfoundation.org" 
+                href="mailto:empower@codetrainfoundation.org" 
                 className="text-[#00838f] font-semibold hover:underline"
               >
                 partnerships@codetrainfoundation.org
