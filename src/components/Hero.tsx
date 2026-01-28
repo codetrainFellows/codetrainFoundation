@@ -1,5 +1,6 @@
 import React from 'react';
 import HeroImage from "../assets/campus2.jpg"
+import { Link } from 'react-router-dom';
 
 const Hero: React.FC = () => {
   const handleScrollToImpact = () => {
@@ -59,12 +60,14 @@ const Hero: React.FC = () => {
             </a>
             
             {/* Fund a Scholarship Button */}
+            <Link to="/fund-scholarship">
             <button 
               onClick={handleScrollToImpact}
               className="w-full sm:w-auto bg-[#234e4e] border border-white/30 text-white px-10 py-4 rounded-lg text-lg font-bold hover:bg-[#1a3a3a] transition-all shadow-xl active:scale-95 cursor-pointer"
             >
               Fund a Scholarship
             </button>
+            </Link>
           </div>
         </div>
       </div>

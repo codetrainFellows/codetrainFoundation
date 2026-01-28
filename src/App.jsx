@@ -1,23 +1,34 @@
-
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import MissionImpact from './components/MissionImpact';
 import InclusionSection from './components/InclusionSection';
-import Focus2026 from './components/Focus2026';
 import Footer from './components/Footer';
+import FundScholarship from './components/FundScholarship';
+
+const HomePage = () => (
+  <>
+    <Navbar />
+    <main>
+      <Hero />
+      <MissionImpact />
+      <InclusionSection />
+    </main>
+    <Footer />
+  </>
+);
 
 const App = () => {
   return (
-    <div className="min-h-screen bg-white text-slate-900 selection:bg-teal-100 ">
-      <Navbar />
-      <main>
-        <Hero />
-        <MissionImpact />
-        <InclusionSection />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <div className="min-h-screen bg-white text-slate-900 selection:bg-teal-100">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/fund-scholarship" element={<FundScholarship />} />
+        </Routes>
+      </div>
+    </Router>
   );
 };
 
