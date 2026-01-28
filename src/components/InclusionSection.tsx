@@ -3,25 +3,27 @@ import React from 'react';
 import image from "../assets/group.jpg"
 import { Link } from 'react-router-dom';
 import pic1 from "../assets/image1.jpg";
+import pic2 from "../assets/image2.jpg";
+import pic3 from "../assets/image3.jpg";
 
 const InclusionSection: React.FC = () => {
   const cards = [
     {
       title: "Low-Income Learners",
       description: "For learners unable to afford market-rate training",
-      image: {pic1},
+      image: pic1,
       bgColor: "bg-[#f8f9fb]"
     },
     {
       title: "Women in STEM",
       description: "For young women where participation gaps persist.",
-      image: "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?auto=format&fit=crop&q=80&w=400",
+      image: pic2,
       bgColor: "bg-[#f8f9fb]"
     },
     {
       title: "Adaptive Pathways",
       description: "For learners requiring flex and adaptive training paths",
-      image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=400",
+      image: pic3,
       bgColor: "bg-[#f8f9fb]"
     }
   ];
@@ -45,7 +47,7 @@ const InclusionSection: React.FC = () => {
                 <img 
                   src={card.image} 
                   alt={card.title} 
-                  className="w-full h-full object-cover grayscale opacity-80"
+                  className="w-full h-full object-cover  opacity-80"
                 />
                 <div className="absolute inset-0 bg-[#00838f]/5"></div>
               </div>

@@ -15,9 +15,9 @@ const Navbar: React.FC = () => {
           </Link>
           
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#" className="text-sm font-medium hover:text-teal-100">About</a>
+            {/* <a href="#" className="text-sm font-medium hover:text-teal-100">About</a>
             <a href="#" className="text-sm font-medium hover:text-teal-100">Our Impact</a>
-            <a href="#" className="text-sm font-medium hover:text-teal-100">Support Us</a>
+            <a href="#" className="text-sm font-medium hover:text-teal-100">Support Us</a> */}
             <a href='https://donate.stripe.com/fZu00kcoq6v04Yr8i91ZS0b'>
             <button className="bg-white text-[#00838f] px-5 py-2.5 rounded-md text-sm font-bold flex items-center gap-2 hover:bg-teal-50 transition-colors cursor-pointer">
               Donate via KATO
