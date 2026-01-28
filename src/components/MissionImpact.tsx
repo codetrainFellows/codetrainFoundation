@@ -51,7 +51,7 @@ const MissionImpact: React.FC = () => {
             ) : (
               <iframe
                 className="w-full aspect-video"
-                src="https://www.youtube.com/embed/-YUY-MFGdQw?autoplay=1"
+                src="https://youtu.be/xr_pJlJi0JE?si=vIL4CI0Ta4Ww8_v8"
                 title="Mission Video"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
