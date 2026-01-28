@@ -50,7 +50,7 @@ const Hero: React.FC = () => {
           
           <div className="flex flex-col sm:flex-row gap-5 items-center">
             {/* Donate via KATO Button */}
-           <a href='https://donate.stripe.com/fZe00kcoq6v04Yr8i91ZS0b'>
+            <a href='https://donate.stripe.com/fZu00kcoq6v04Yr8i91ZS0b'>
   <button 
     onClick={handleScrollToImpact}
     className="w-full sm:w-auto bg-[#dae5e7] text-[#1a3a3a] px-10 py-4 rounded-lg text-3xl font-bold hover:bg-white transition-all shadow-xl active:scale-95 cursor-pointer text-left"
