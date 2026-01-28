@@ -1,5 +1,6 @@
 
 import React from 'react';
+import image from "../assets/group.jpg"
 
 const InclusionSection: React.FC = () => {
   const cards = [
@@ -61,7 +62,7 @@ const InclusionSection: React.FC = () => {
           {/* Left: Image */}
           <div className="rounded-2xl overflow-hidden shadow-xl border-4 border-white h-full min-h-[250px] lg:min-h-[350px]">
             <img 
-              src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=1200" 
+              src={image}
               alt="Graduates" 
               className="w-full h-full object-cover"
             />
@@ -79,9 +80,11 @@ const InclusionSection: React.FC = () => {
             <div className="space-y-4">
               {/* CTA 1 */}
               <div className="flex flex-col sm:flex-row items-center gap-4 group">
+                <a href='https://donate.stripe.com/fZu00kcoq6v04Yr8i91ZS0b'>
                 <button className="w-full sm:w-auto min-w-[200px] bg-[#3b6f71] text-white px-6 py-3 rounded-lg font-bold text-sm transition-all hover:bg-[#2d5557] shadow-lg cursor-pointer">
                   Donate via KATO
                 </button>
+                </a>
                 <p className="text-slate-500 text-xs lg:text-sm font-medium">Simple, tax-efficient giving</p>
               </div>
 
