@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 
 const MissionImpact: React.FC = () => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+  
+  // YouTube video ID extracted from the URL
+  const videoId = 'xr_pJlJi0JE';
 
   return (
     <section className="bg-white min-h-[90vh] flex flex-col">
@@ -35,8 +38,9 @@ const MissionImpact: React.FC = () => {
                 className="relative group cursor-pointer"
                 onClick={() => setIsVideoPlaying(true)}
               >
+                {/* YouTube thumbnail image */}
                 <img 
-                  src="https://img.youtube.com/vi/-YUY-MFGdQw/maxresdefault.jpg" 
+                  src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
                   alt="Mission Video" 
                   className="w-full aspect-video object-cover transition-transform duration-500 group-hover:scale-105"
                 />
@@ -51,7 +55,7 @@ const MissionImpact: React.FC = () => {
             ) : (
               <iframe
                 className="w-full aspect-video"
-                src="https://youtu.be/xr_pJlJi0JE?si=vIL4CI0Ta4Ww8_v8"
+                src={`https://www.youtube.com/embed/${videoId}?autoplay=1&si=vIL4CI0Ta4Ww8_v8`}
                 title="Mission Video"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
