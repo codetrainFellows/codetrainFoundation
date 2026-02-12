@@ -3,25 +3,16 @@ import React from 'react';
 const BehindTheNumbers: React.FC = () => {
   const alumniStories = [
     {
-      name: "Josephine Mensah",
-      role: "Frontend Developer at mPharma",
-      before: "Josephine was unemployed after university, struggling to break into tech without formal training.",
-      after: "After completing the program, she secured a role at mPharma building healthcare solutions.",
-      quote: "The program prepared me for a real work environment, not just technical skills."
+      name: "Jermaine",
+      story: "After completing Codetrain at just 12, he embarked on his second tech startup, focused on revolutionizing loyalty programs for small shops. He interned at Cedi Rates and now advises two companies. Additionally, he serves as a mentor at Moonshot Pirates in Austria, guiding young innovators and sharing his expertise."
     },
     {
-      name: "Kwame Asante",
-      role: "Full-Stack Engineer",
-      before: "Before Codetrain, Kwame was working in retail with no clear path to a tech career.",
-      after: "Today, he's a full-stack engineer building products used across West Africa.",
-      quote: null
+      name: "Oscarlyn",
+      story: "She was best student in 2023. A medical doctor with a passion for tech, she impressed several companies at our demo day. She showcased her app, a comprehensive rabbit farming management system, which captured significant interest from potential employers. She currently mentors other young ladies at Codetrain."
     },
     {
-      name: "Ama Darko",
-      role: "UX Designer at Fidelity Bank",
-      before: "Entered the program with a passion for design but no professional experience.",
-      after: "Now working as a UX designer and contributing to digital banking innovation.",
-      quote: null
+      name: "Anthony",
+      story: "After dropping out of university, Anthony decided to join Codetrain, seeking practical experience and leadership skills. After working as a teaching fellow, he secured a role with Infinitas Media in Berlin. He continues to mentor Codetrain students and gives talks whenever he's in Ghana."
     }
   ];
 
@@ -52,15 +43,15 @@ const BehindTheNumbers: React.FC = () => {
   return (
     <section className="bg-white py-12 md:py-16 px-4">
       <div className="max-w-7xl mx-auto">
-        
+
         {/* Section Header */}
         <div className="text-center mb-10">
           <h2 className="text-2xl md:text-3xl font-extrabold text-[#1a3a3a] mb-4">
             Behind the Numbers
           </h2>
           <p className="text-slate-600 text-base leading-relaxed max-w-4xl mx-auto">
-            The outcomes above represent real people — each with a journey shaped by access to skills, opportunity, and support. 
-            Codetrain Foundation works with young people who are often unemployed or under-employed at entry. 
+            The outcomes above represent real people — each with a journey shaped by access to skills, opportunity, and support.
+            Codetrain Foundation works with young people who are often unemployed or under-employed at entry.
             What follows are a few of the lived journeys behind the data — showing how skills translate into confidence, income, and long-term opportunity.
           </p>
         </div>
@@ -79,33 +70,19 @@ const BehindTheNumbers: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           {alumniStories.map((story, idx) => (
             <div key={idx} className="bg-slate-50 rounded-xl p-6 border border-slate-100 hover:border-[#00838f]/30 transition-all flex flex-col">
-              <div className="mb-4">
-                <h4 className="text-lg font-bold text-[#1a3a3a] mb-1">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-full bg-[#00838f]/10 flex items-center justify-center flex-shrink-0">
+                  <span className="text-[#00838f] font-bold text-sm">
+                    {story.name.charAt(0)}
+                  </span>
+                </div>
+                <h4 className="text-lg font-bold text-[#1a3a3a]">
                   {story.name}
                 </h4>
-                <p className="text-[#00838f] font-semibold text-sm">
-                  {story.role}
-                </p>
               </div>
-              
-              <div className="space-y-3 mb-4 flex-grow">
-                <p className="text-slate-700 text-sm leading-relaxed">
-                  <span className="font-semibold text-slate-900">Before:</span> {story.before}
-                </p>
-                <p className="text-slate-700 text-sm leading-relaxed">
-                  <span className="font-semibold text-slate-900">After:</span> {story.after}
-                </p>
-              </div>
-
-              {story.quote && (
-                <div className="pt-4 border-t border-slate-200">
-                  <p className="text-slate-700 italic text-sm leading-relaxed">
-                    <span className="text-lg text-[#00838f] font-serif mr-1">"</span>
-                    {story.quote}
-                    <span className="text-lg text-[#00838f] font-serif ml-1">"</span>
-                  </p>
-                </div>
-              )}
+              <p className="text-slate-700 text-sm leading-relaxed flex-grow">
+                {story.story}
+              </p>
             </div>
           ))}
         </div>
@@ -130,14 +107,14 @@ const BehindTheNumbers: React.FC = () => {
               <div className="rounded-xl overflow-hidden shadow-lg border-4 border-white">
                 <iframe
                   src={`https://www.youtube.com/embed/${getEmbedId(video.videoId)}`}
-                 
+                  title={video.title}
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   className="w-full aspect-video"
                 />
               </div>
               <p className="text-slate-700 font-semibold text-sm md:text-base text-center leading-snug">
-                
+                {video.title}
               </p>
             </div>
           ))}
