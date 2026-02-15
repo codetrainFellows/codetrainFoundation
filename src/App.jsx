@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import MissionImpact from './components/MissionImpact';
-import BehindTheNumbers from './components/BehindTheNumbers';
+// import BehindTheNumbers from './components/BehindTheNumbers';
 import InclusionSection from './components/InclusionSection';
 import Footer from './components/Footer';
 import FundScholarship from './components/FundScholarship';
@@ -14,7 +14,7 @@ const HomePage = () => (
     <main>
       <Hero />
       <MissionImpact />
-      <BehindTheNumbers />
+      {/* <BehindTheNumbers /> */}
       <InclusionSection />
     </main>
     <Footer />
