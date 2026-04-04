@@ -1,5 +1,6 @@
 import React from 'react';
 import HeroImage from "../assets/campus2.jpg"
+import { Link } from 'react-router-dom';
 
 const Hero: React.FC = () => {
   const handleScrollToImpact = () => {
@@ -42,29 +43,30 @@ const Hero: React.FC = () => {
             <p className="text-lg md:text-xl text-white/95 leading-relaxed font-medium">
               Codetrain Foundation is a Ghana-based nonprofit expanding access to employment-linked technology education for talented individuals facing financial or structural barriers.
             </p>
-            <p className="text-lg md:text-xl text-white/95 leading-relaxed font-medium">
-              We fund scholarships that enable learners to build sustainable careers — not just acquire skills.
-            </p>
           </div>
           
           <div className="flex flex-col sm:flex-row gap-5 items-center">
             {/* Donate via KATO Button */}
             <a href='https://paystack.shop/pay/opportunity'>
-            <button 
-              onClick={handleScrollToImpact}
-              className="w-full sm:w-auto bg-[#dae5e7] text-[#1a3a3a] px-10 py-4 rounded-lg text-lg font-bold hover:bg-white transition-all shadow-xl active:scale-95 cursor-pointer"
-            >
-              Donate via KATO
-            </button>
-            </a>
+  <button 
+    onClick={handleScrollToImpact}
+    className="w-full sm:w-auto bg-[#dae5e7] text-[#1a3a3a] px-10 py-4 rounded-lg text-3xl font-bold hover:bg-white transition-all shadow-xl active:scale-95 cursor-pointer text-left"
+  >
+    Donate via KATO
+    <div className="text-xs font-normal opacity-60 mt-1">Support a student through a scholarship</div>
+  </button>
+</a>
             
             {/* Fund a Scholarship Button */}
+            <Link to="/fund-scholarship">
             <button 
               onClick={handleScrollToImpact}
-              className="w-full sm:w-auto bg-[#234e4e] border border-white/30 text-white px-10 py-4 rounded-lg text-lg font-bold hover:bg-[#1a3a3a] transition-all shadow-xl active:scale-95 cursor-pointer"
+              className="w-full sm:w-auto bg-[#234e4e] border border-white/30 text-white px-10 py-4 text-left rounded-lg text-lg font-bold hover:bg-[#1a3a3a] transition-all shadow-xl active:scale-95 cursor-pointer"
             >
-              Fund a Scholarship
+              Fund a Scholarship Program
+              <div className="text-xs font-normal opacity-60 mt-1">For organizations sponsoring multiple scholars</div>
             </button>
+            </Link>
           </div>
         </div>
       </div>

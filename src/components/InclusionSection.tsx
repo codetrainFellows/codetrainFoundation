@@ -1,24 +1,29 @@
 
 import React from 'react';
+import image from "../assets/group.jpg"
+import { Link } from 'react-router-dom';
+import pic1 from "../assets/image1.jpg";
+import pic2 from "../assets/image2.jpg";
+import pic3 from "../assets/image3.jpg";
 
 const InclusionSection: React.FC = () => {
   const cards = [
     {
       title: "Low-Income Learners",
       description: "For learners unable to afford market-rate training",
-      image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=400",
+      image: pic1,
       bgColor: "bg-[#f8f9fb]"
     },
     {
       title: "Women in STEM",
       description: "For young women where participation gaps persist.",
-      image: "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?auto=format&fit=crop&q=80&w=400",
+      image: pic2,
       bgColor: "bg-[#f8f9fb]"
     },
     {
       title: "Adaptive Pathways",
       description: "For learners requiring flex and adaptive training paths",
-      image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=400",
+      image: pic3,
       bgColor: "bg-[#f8f9fb]"
     }
   ];
@@ -42,7 +47,7 @@ const InclusionSection: React.FC = () => {
                 <img 
                   src={card.image} 
                   alt={card.title} 
-                  className="w-full h-full object-cover grayscale opacity-80"
+                  className="w-full h-full object-cover  opacity-80"
                 />
                 <div className="absolute inset-0 bg-[#00838f]/5"></div>
               </div>
@@ -61,7 +66,7 @@ const InclusionSection: React.FC = () => {
           {/* Left: Image */}
           <div className="rounded-2xl overflow-hidden shadow-xl border-4 border-white h-full min-h-[250px] lg:min-h-[350px]">
             <img 
-              src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=1200" 
+              src={image}
               alt="Graduates" 
               className="w-full h-full object-cover"
             />
@@ -89,10 +94,12 @@ const InclusionSection: React.FC = () => {
 
               {/* CTA 2 */}
               <div className="flex flex-col sm:flex-row items-center gap-4 group">
-                <button className="w-full sm:w-auto min-w-[200px] bg-[#3b6f71] text-white px-6 py-3 rounded-lg font-bold text-sm transition-all hover:bg-[#2d5557] shadow-lg cursor-pointer">
-                  Fund a Scholarship
+                <Link to="/fund-scholarship">
+                <button className="w-full sm:w-auto min-w-[250px] bg-[#3b6f71] text-white px-6 py-3 rounded-lg font-bold text-sm transition-all hover:bg-[#2d5557] shadow-lg cursor-pointer">
+                  Fund a Scholarship Program
                 </button>
-                <p className="text-slate-500 text-xs lg:text-sm font-medium">Sponsor one or more full scholarships</p>
+                </Link>
+                <p className="text-slate-600 text-xs lg:text-sm font-medium">For companies, nonprofits, and partners sponsoring multiple scholars</p>
               </div>
             </div>
           </div>

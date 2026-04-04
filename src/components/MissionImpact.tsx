@@ -1,7 +1,11 @@
-
-import React from 'react';
+import React, { useState } from 'react';
 
 const MissionImpact: React.FC = () => {
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+  
+  // YouTube video ID extracted from the URL
+  const videoId = 'xr_pJlJi0JE';
+
   return (
     <section className="bg-white min-h-[90vh] flex flex-col">
       {/* Top: Mission Content */}
@@ -14,7 +18,7 @@ const MissionImpact: React.FC = () => {
             </div>
             
             <h3 className="text-2xl md:text-3xl font-bold text-slate-800 leading-tight">
-              Building Africa’s Tech Opportunity Engine
+              Building Africa's Tech Opportunity Engine
             </h3>
             
             <p className="text-slate-600 text-lg md:text-xl leading-relaxed max-w-xl">
@@ -28,19 +32,35 @@ const MissionImpact: React.FC = () => {
             </p>
           </div>
 
-          <div className="relative group cursor-pointer shadow-2xl rounded-sm overflow-hidden border-8 border-white">
-            <img 
-              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=1200" 
-              alt="Mission Video" 
-              className="w-full aspect-video object-cover transition-transform duration-500 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center shadow-lg transition-transform group-hover:scale-110">
-                <svg className="w-8 h-8 text-[#00838f] ml-1" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z" />
-                </svg>
+          <div className="relative shadow-2xl rounded-sm overflow-hidden border-8 border-white">
+            {!isVideoPlaying ? (
+              <div 
+                className="relative group cursor-pointer"
+                onClick={() => setIsVideoPlaying(true)}
+              >
+                {/* YouTube thumbnail image */}
+                <img 
+                  src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
+                  alt="Mission Video" 
+                  className="w-full aspect-video object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center shadow-lg transition-transform group-hover:scale-110">
+                    <svg className="w-8 h-8 text-[#00838f] ml-1" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </div>
+                </div>
               </div>
-            </div>
+            ) : (
+              <iframe
+                className="w-full aspect-video"
+                src={`https://www.youtube.com/embed/${videoId}?autoplay=1&si=vIL4CI0Ta4Ww8_v8`}
+                title="Mission Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            )}
           </div>
         </div>
       </div>
@@ -69,9 +89,9 @@ const MissionImpact: React.FC = () => {
       <div className="bg-slate-50 py-8 px-4 border-b border-slate-100">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-lg md:text-xl text-slate-700 italic font-medium leading-relaxed">
-            <span className="text-2xl text-[#00838f] font-serif mr-2">“</span>
+            <span className="text-2xl text-[#00838f] font-serif mr-2">"</span>
             The program prepared me for a real work environment, not just technical skills.
-            <span className="text-2xl text-[#00838f] font-serif ml-2">”</span>
+            <span className="text-2xl text-[#00838f] font-serif ml-2">"</span>
             <span className="ml-4 text-sm font-bold text-slate-500 uppercase tracking-tighter">— Graduate</span>
           </p>
         </div>
