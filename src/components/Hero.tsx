@@ -45,27 +45,25 @@ const Hero: React.FC = () => {
             </p>
           </div>
           
-          <div className="flex flex-col sm:flex-row gap-5 items-center">
+          <div className="flex flex-col sm:flex-row gap-4 items-center">
             {/* Donate via KATO Button */}
-            <a href='https://paystack.shop/pay/opportunity'>
-  <button 
-    onClick={handleScrollToImpact}
-    className="w-full sm:w-auto bg-[#dae5e7] text-[#1a3a3a] px-10 py-4 rounded-lg text-3xl font-bold hover:bg-white transition-all shadow-xl active:scale-95 cursor-pointer text-left"
-  >
-    Donate via KATO
-    <div className="text-xs font-normal opacity-60 mt-1">Support a student through a scholarship</div>
-  </button>
-</a>
+            <a 
+              href='https://paystack.shop/pay/opportunity'
+              className="w-full sm:w-auto bg-[#dae5e7] text-[#1a3a3a] px-8 py-3 rounded-lg text-lg font-bold hover:bg-white transition-all shadow-xl active:scale-95 cursor-pointer text-center"
+            >
+              Donate via KATO
+              <div className="text-xs font-normal opacity-60 mt-1">Support a student through a scholarship</div>
+            </a>
             
             {/* Fund a Scholarship Button */}
             <Link to="/fund-scholarship">
-            <button 
-              onClick={handleScrollToImpact}
-              className="w-full sm:w-auto bg-[#234e4e] border border-white/30 text-white px-10 py-4 text-left rounded-lg text-lg font-bold hover:bg-[#1a3a3a] transition-all shadow-xl active:scale-95 cursor-pointer"
-            >
-              Fund a Scholarship Program
-              <div className="text-xs font-normal opacity-60 mt-1">For organizations sponsoring multiple scholars</div>
-            </button>
+              <button 
+                onClick={handleScrollToImpact}
+                className="w-full sm:w-auto bg-[#234e4e] border border-white/30 text-white px-8 py-3 rounded-lg text-lg font-bold hover:bg-[#1a3a3a] transition-all shadow-xl active:scale-95 cursor-pointer text-center"
+              >
+                Fund a Scholarship Program
+                <div className="text-xs font-normal opacity-60 mt-1">For organizations sponsoring multiple scholars</div>
+              </button>
             </Link>
           </div>
         </div>
