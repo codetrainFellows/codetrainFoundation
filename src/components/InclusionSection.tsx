@@ -86,7 +86,7 @@ const InclusionSection: React.FC = () => {
               <div className="flex flex-col sm:flex-row items-center gap-4 group">
                  <a href='https://paystack.shop/pay/opportunity'>
                 <button className="w-full sm:w-auto min-w-[200px] bg-[#3b6f71] text-white px-6 py-3 rounded-lg font-bold text-sm transition-all hover:bg-[#2d5557] shadow-lg cursor-pointer">
-                  Donate via KATO
+                  Donate
                 </button>
                 </a>
                 <p className="text-slate-500 text-xs lg:text-sm font-medium">Simple, tax-efficient giving</p>

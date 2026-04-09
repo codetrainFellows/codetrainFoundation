@@ -14,7 +14,7 @@ const SupportSection: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
           {/* Option 1 */}
           <div className="bg-slate-50 p-8 rounded-3xl border border-slate-100 flex flex-col hover:border-[#00838f]/30 transition-all">
-            <h4 className="font-extrabold text-slate-900 text-xl mb-4">Donate via KATO</h4>
+            <h4 className="font-extrabold text-slate-900 text-xl mb-4">Donate</h4>
             <p className="text-slate-500 text-sm mb-8 flex-grow">Simple, tax-efficient giving for individual supporters.</p>
             <a href='https://paystack.shop/pay/opportunity'>
             <button className="w-full bg-[#00838f] text-white py-3 rounded-xl font-bold text-sm hover:bg-[#006064] transition-colors shadow-md">

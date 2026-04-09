@@ -62,7 +62,7 @@ const Navbar: React.FC = () => {
               href='https://paystack.shop/pay/opportunity'
               className="bg-[#00838f] text-white px-4 py-2 rounded-md text-sm font-bold hover:bg-[#006064] transition-colors shadow-md"
             >
-              Donate via KATO
+              Donate
             </a>
           </div>
 
@@ -111,7 +111,7 @@ const Navbar: React.FC = () => {
                   href='https://paystack.shop/pay/opportunity'
                   className="bg-[#00838f] text-white px-4 py-2 rounded-md text-sm font-bold hover:bg-[#006064] transition-colors shadow-md w-full block text-center"
                 >
-                  Donate via KATO
+                  Donate
                 </a>
               </div>
             </div>

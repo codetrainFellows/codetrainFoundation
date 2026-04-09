@@ -46,12 +46,12 @@ const Hero: React.FC = () => {
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 items-center">
-            {/* Donate via KATO Button */}
+            {/* Donate  */}
             <a 
               href='https://paystack.shop/pay/opportunity'
               className="w-full sm:w-auto bg-[#dae5e7] text-[#1a3a3a] px-8 py-3 rounded-lg text-lg font-bold hover:bg-white transition-all shadow-xl active:scale-95 cursor-pointer text-center"
             >
-              Donate via KATO
+              Donate 
               <div className="text-xs font-normal opacity-60 mt-1">Support a student through a scholarship</div>
             </a>
             

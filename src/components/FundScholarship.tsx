@@ -9,7 +9,7 @@ const FundScholarship: React.FC = () => {
       <Navbar />
 
       {/* Content - Scrollable Area */}
-      <div className="flex-1 overflow-y-auto px-4 py-6 md:py-8">
+      <div className="flex-1 overflow-y-auto px-4 pt-20 pb-6 md:pt-20 md:pb-8">
         <div className="max-w-4xl mx-auto">
           
           {/* Hero Section */}
