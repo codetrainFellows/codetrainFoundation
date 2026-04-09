@@ -1,19 +1,19 @@
-
 import React from 'react';
+import { Code, Palette, Cog } from 'lucide-react';
 
 const WhatWeFund: React.FC = () => {
   const domains = [
     {
       title: "Software Engineering",
-      icon: "💻"
+      icon: <Code className="w-16 h-16 text-[#00838f]" />
     },
     {
       title: "Digital Product Design (UX/UI)",
-      icon: "🎨"
+      icon: <Palette className="w-16 h-16 text-[#00838f]" />
     },
     {
       title: "Technology Fundamentals",
-      icon: "⚙️"
+      icon: <Cog className="w-16 h-16 text-[#00838f]" />
     }
   ];
   
@@ -31,7 +31,7 @@ const WhatWeFund: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {domains.map((domain, index) => (
             <div key={index} className="p-10 bg-white border border-slate-100 rounded-2xl shadow-sm hover:shadow-md transition-all text-center">
-              <div className="text-5xl mb-6">{domain.icon}</div>
+              <div className="mb-6 flex justify-center">{domain.icon}</div>
               <h4 className="text-xl font-extrabold text-slate-800">{domain.title}</h4>
             </div>
           ))}

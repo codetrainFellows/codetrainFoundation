@@ -1,5 +1,6 @@
 import React from 'react';
 import Logo from '../assets/logo3.png';
+import { Mail, MapPin, Globe } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -51,7 +52,7 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <div className="space-y-3">
               <div className="flex items-center gap-2">
-                <span className="text-[#00838f]">📧</span>
+                <Mail className="w-4 h-4 text-[#00838f]" />
                 <a
                   href="mailto:empower@codetrainfoundation.org"
                   className="text-gray-300 hover:text-white transition-colors text-sm"
@@ -60,13 +61,13 @@ const Footer: React.FC = () => {
                 </a>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-[#00838f]">📍</span>
+                <MapPin className="w-4 h-4 text-[#00838f]" />
                 <span className="text-gray-300 text-sm">
                   Accra, Ghana
                 </span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-[#00838f]">🌐</span>
+                <Globe className="w-4 h-4 text-[#00838f]" />
                 <a
                   href="https://codetrainfoundation.org"
                   className="text-gray-300 hover:text-white transition-colors text-sm"

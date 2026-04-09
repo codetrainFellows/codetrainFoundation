@@ -1,4 +1,5 @@
 import React from 'react';
+import { Target, TrendingUp, FileText } from 'lucide-react';
 
 const SupportSection: React.FC = () => {
   return (
@@ -50,15 +51,21 @@ const SupportSection: React.FC = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div className="p-4">
-              <div className="w-12 h-12 bg-[#00838f] rounded-full flex items-center justify-center text-white mx-auto mb-4 font-bold text-xl">1</div>
+              <div className="w-12 h-12 bg-[#00838f] rounded-full flex items-center justify-center text-white mx-auto mb-4">
+                <Target className="w-6 h-6" />
+              </div>
               <p className="font-extrabold text-slate-900">Clear goals</p>
             </div>
             <div className="p-4">
-              <div className="w-12 h-12 bg-[#00838f] rounded-full flex items-center justify-center text-white mx-auto mb-4 font-bold text-xl">2</div>
+              <div className="w-12 h-12 bg-[#00838f] rounded-full flex items-center justify-center text-white mx-auto mb-4">
+                <TrendingUp className="w-6 h-6" />
+              </div>
               <p className="font-extrabold text-slate-900">Measurable outcomes</p>
             </div>
             <div className="p-4">
-              <div className="w-12 h-12 bg-[#00838f] rounded-full flex items-center justify-center text-white mx-auto mb-4 font-bold text-xl">3</div>
+              <div className="w-12 h-12 bg-[#00838f] rounded-full flex items-center justify-center text-white mx-auto mb-4">
+                <FileText className="w-6 h-6" />
+              </div>
               <p className="font-extrabold text-slate-900">Transparent reporting</p>
             </div>
           </div>
