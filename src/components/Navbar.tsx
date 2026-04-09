@@ -1,10 +1,12 @@
 
 import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import Logo from '../assets/logo3.png';
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,6 +18,13 @@ const Navbar: React.FC = () => {
   }, []);
 
   const scrollToSection = (sectionId: string) => {
+    // If we're not on the home page, navigate to home first
+    if (location.pathname !== '/') {
+      window.location.href = `/#${sectionId}`;
+      return;
+    }
+
+    // If we're on the home page, scroll to the section
     const element = document.getElementById(sectionId);
     element?.scrollIntoView({ behavior: 'smooth' });
     setIsMobileMenuOpen(false);
@@ -31,11 +40,13 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <img 
-              src={Logo} 
-              alt="Codetrain Foundation Logo" 
-              className="h-10 w-auto object-contain"
-            />
+            <Link to="/" className="hover:opacity-80 transition-opacity">
+              <img 
+                src={Logo} 
+                alt="Codetrain Foundation Logo" 
+                className="h-10 w-auto object-contain"
+              />
+            </Link>
           </div>
           
           {/* Desktop Navigation */}

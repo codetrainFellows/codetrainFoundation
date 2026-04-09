@@ -7,7 +7,7 @@ const MissionImpact: React.FC = () => {
   const videoId = 'xr_pJlJi0JE';
 
   return (
-    <section className="bg-white min-h-[90vh] flex flex-col">
+    <section id="about" className="bg-white min-h-[90vh] flex flex-col">
       {/* Top: Mission Content */}
       <div className="flex-grow flex items-center px-4 py-16 md:py-24">
         <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">

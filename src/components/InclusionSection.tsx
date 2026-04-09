@@ -29,7 +29,7 @@ const InclusionSection: React.FC = () => {
   ];
 
   return (
-    <section className="bg-white min-h-[90vh] flex flex-col justify-center py-12 px-4 overflow-hidden">
+    <section id="impact" className="bg-white min-h-[90vh] flex flex-col justify-center py-12 px-4 overflow-hidden">
       <div className="max-w-7xl mx-auto w-full flex flex-col h-full gap-8 lg:gap-12">
         {/* Header */}
         <div className="text-center">

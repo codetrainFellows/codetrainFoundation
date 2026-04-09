@@ -3,7 +3,7 @@ import Logo from '../assets/logo3.png';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#1a3a3a] text-white">
+    <footer id="support" className="bg-[#1a3a3a] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           
