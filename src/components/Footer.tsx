@@ -1,6 +1,7 @@
 import React from 'react';
 import Logo from '../assets/logo3.png';
-import { Mail, MapPin, Globe } from 'lucide-react';
+import { Mail, MapPin, Globe, HandHeart } from 'lucide-react';
+import { DONATE_URL } from './DonateSection';
 
 const Footer: React.FC = () => {
   return (
@@ -18,6 +19,15 @@ const Footer: React.FC = () => {
             <p className="text-gray-300 text-sm leading-relaxed max-w-md">
               Expanding access to employment-linked technology education for talented individuals facing financial or structural barriers.
             </p>
+            <a
+              href={DONATE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 mt-6 bg-[#00838f] text-white px-6 py-3 rounded-md text-sm font-bold hover:bg-[#006064] transition-colors shadow-md"
+            >
+              <HandHeart className="w-4 h-4" />
+              Donate Now
+            </a>
           </div>
 
           {/* Quick Links */}
@@ -42,6 +52,16 @@ const Footer: React.FC = () => {
               <li>
                 <a href="/fund-scholarship" className="text-gray-300 hover:text-white transition-colors text-sm">
                   Fund a Scholarship
+                </a>
+              </li>
+              <li>
+                <a
+                  href={DONATE_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-white transition-colors text-sm"
+                >
+                  Donate
                 </a>
               </li>
             </ul>

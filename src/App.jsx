@@ -6,6 +6,7 @@ import MissionImpact from './components/MissionImpact';
 // import BehindTheNumbers from './components/BehindTheNumbers';
 import InclusionSection from './components/InclusionSection';
 import Footer from './components/Footer';
+import DonateSection from './components/DonateSection';
 import FundScholarship from './components/FundScholarship';
 
 const HomePage = () => (
@@ -16,6 +17,7 @@ const HomePage = () => (
       <MissionImpact />
       {/* <BehindTheNumbers /> */}
       <InclusionSection />
+      <DonateSection />
     </main>
     <Footer />
   </>

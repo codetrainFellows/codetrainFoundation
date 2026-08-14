@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './Navbar';
+import DonateSection from './DonateSection';
 import { Mail, CheckCircle, Users, Target, HandHeart } from 'lucide-react';
 
 const FundScholarship: React.FC = () => {
@@ -103,6 +104,9 @@ const FundScholarship: React.FC = () => {
 
         </div>
       </div>
+
+      {/* Donation Section */}
+      <DonateSection />
     </div>
   );
 };

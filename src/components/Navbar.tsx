@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Logo from '../assets/logo3.png';
+import { DONATE_URL } from './DonateSection';
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -69,8 +70,10 @@ const Navbar: React.FC = () => {
             >
               Support Us
             </button>
-            <a 
-              href='https://paystack.shop/pay/opportunity'
+            <a
+              href={DONATE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-[#00838f] text-white px-4 py-2 rounded-md text-sm font-bold hover:bg-[#006064] transition-colors shadow-md"
             >
               Donate
@@ -118,8 +121,11 @@ const Navbar: React.FC = () => {
                 Support Us
               </button>
               <div className="px-3 py-2">
-                <a 
-                  href='https://paystack.shop/pay/opportunity'
+                <a
+                  href={DONATE_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setIsMobileMenuOpen(false)}
                   className="bg-[#00838f] text-white px-4 py-2 rounded-md text-sm font-bold hover:bg-[#006064] transition-colors shadow-md w-full block text-center"
                 >
                   Donate
